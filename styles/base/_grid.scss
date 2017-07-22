@@ -1,0 +1,74 @@
+// ----------------------------------------------------------------------------
+// Grids
+// ----------------------------------------------------------------------------
+
+// Uses susy grid 3 for grid math and mappy-breakpoints for simple syntax
+// Some bootstrap-style helper classes included for rapid prototyping
+
+
+// Susy Configuration
+
+$columns: 12;
+
+$susy: (
+  'columns': susy-repeat($columns),
+  'gutters': space(4),
+  'spread': 'narrow',
+  'container-spread': 'narrow',
+);
+
+
+.container {
+  @include clearfix;
+  padding: 0 10px;
+
+  @include bp(small) {
+    padding: 0;
+    margin: 0 auto;
+    width: (map-get($breakpoints, small));
+  }
+
+  @include bp(medium) {
+    width: (map-get($breakpoints, medium));
+  }
+
+  @include bp(large) {
+    width: (map-get($breakpoints, large));
+  }
+}
+
+.span {
+
+  @include bp(medium) {
+    float: left;
+
+    &--last {
+      float: right;
+    }
+  }
+}
+
+
+.span-1-3 {
+  width: span(all);
+
+  @include bp(medium) {
+    width: span(5);
+  }
+
+  @include bp(large) {
+    width: span(4);
+  }
+}
+
+.span-2-3 {
+  width: span(all);
+
+  @include bp(medium) {
+    width: span(7);
+  }
+
+  @include bp(large) {
+    width: span(8);
+  }
+}

@@ -1,0 +1,47 @@
+.demo {
+  background-size: cover;
+  padding: space(3);
+  margin-bottom: space(2);
+  box-shadow: inset 0 200px 200px rgba(0, 0, 0, 0.5);
+
+  @include bp(medium) {
+    margin-bottom: space(4);
+    padding: space(4);
+    display: flex;
+    height: 400px;
+    box-shadow: none;
+  }
+
+  @include bp(large) {
+    height: 544px;
+    padding: space(6);
+  }
+}
+
+.demo__content {
+  align-self: flex-end;
+  color: $white;
+}
+
+.demo__lead {
+  font-family: 'Zilla Slab Highlight', $sans-serif;
+  @include typesize(1);
+}
+
+.demo__title {
+  margin-bottom: space(4);
+}
+.demo__link {
+  margin-bottom: 0;
+
+  a {
+    color: $purple-light;
+    font-weight: bold;
+    border-bottom: 2px solid $purple-light;
+    transition: color $base-time $base-ease;
+  }
+
+  a:hover {
+    color: lighten($purple-light, 10%);
+  }
+}

@@ -1,0 +1,49 @@
+.resource {
+  background-color: $black;
+  color: $white;
+  padding: space(3);
+  margin-bottom: space(2);
+  flex-direction: column;
+
+  @include bp(medium) {
+    margin-bottom: space(4);
+    padding: space(4);
+    height: 256px;
+    display: flex;
+  }
+
+  @include bp(large) {
+    height: 352px;
+    padding: space(6);
+  }
+}
+
+.resource__lead {
+  @include typesize(1);
+  font-family: 'Zilla Slab Highlight', $sans-serif;
+  margin-bottom: space(2);
+  display: block;
+}
+
+.resource__title {
+  margin-bottom: space(4);
+}
+
+.resource__desc {
+  flex-grow: 1;
+}
+
+.resource__link {
+  margin-bottom: 0;
+
+  a {
+    color: $purple-light;
+    font-weight: bold;
+    border-bottom: 2px solid $purple-light;
+    transition: color $base-time $base-ease;
+  }
+
+  a:hover {
+    color: lighten($purple-light, 10%);
+  }
+}
