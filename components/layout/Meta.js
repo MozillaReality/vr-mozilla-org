@@ -9,6 +9,7 @@ const Meta = props => (
   <div>
     <Head>
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+      <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
