@@ -14,6 +14,16 @@ html, {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  border-bottom: 2px solid $black;
+  font-weight: 600;
+  color: $base-link-color;
+  transition: color $base-time $base-ease;
+
+  &:hover {
+    color: $base-link-hover;
+  }
+}
 
 p {
   margin-bottom: space(2);

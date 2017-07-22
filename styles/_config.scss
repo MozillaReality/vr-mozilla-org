@@ -41,8 +41,8 @@ $mono               : 'Lucida Console', Monaco, monospace !default;
 $base-font-family   : $sans-serif;
 $header-font-family : 'Zilla Slab', $sans-serif;
 $base-bold-weight   : 300;
-$base-link-color    : $primary;
-$base-link-hover    : $primary-low;
+$base-link-color    : $black;
+$base-link-hover    : lighten($black, 30%);
 
 $unit: .5rem;
 

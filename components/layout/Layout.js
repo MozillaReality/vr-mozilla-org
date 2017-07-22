@@ -11,7 +11,7 @@ const Layout = ({ children, title = 'Whiskey, Sugar and Bitters' }) => (
     <Meta title={title} />
     <Header />
 
-    <div className="container">
+    <div className="container content">
       { children }
     </div>
 

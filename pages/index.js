@@ -6,6 +6,7 @@ import { prodUrl as baseUrl } from '../variables';
 import Hero from '../components/Hero';
 import DemoCard from '../components/DemoCard';
 import ResourceCard from '../components/ResourceCard';
+import Experiment from '../components/Experiment';
 
 export default () => (
   <Layout title="Old Fashioned | Home">
@@ -57,5 +58,6 @@ export default () => (
         link="http://www.mozilla.org"
       />
     </div>
+    <Experiment />
   </Layout>
 );

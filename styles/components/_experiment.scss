@@ -1,0 +1,41 @@
+.experiment {
+}
+
+.experiment__text {
+  width: span(all);
+  padding: space(8) space(6);
+  text-align: center;
+  float: left;
+}
+
+.experiment__code {
+  width: span(all);
+  font-size: 13px;
+  float: left;
+  height: 416px;
+  background-color: #1d1f21;
+  border-left: space(1) solid #4e4e4e;
+  display: flex;
+  align-items: center;
+
+  @include bp(medium) {
+    width: span(6);
+  }
+}
+
+.experiment__demo {
+  width: span(12);
+  float: right;
+  height: 416px;
+
+  @include bp(medium) {
+    width: span(6);
+  }
+}
+
+.experiment__link {
+  width: span(all);
+  float: left;
+  text-align: center;
+  padding: space(4) 0;
+}

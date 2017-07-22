@@ -35,6 +35,11 @@
 @import 'base/grid';
 @import 'base/global';
 
+
+// Layout
+// -------------------------
+@import 'layout/layout';
+
 // Components
 // -------------------------
 @import 'components/buttons';
@@ -43,6 +48,7 @@
 @import 'components/footer';
 @import 'components/demo';
 @import 'components/resource';
+@import 'components/experiment';
 // Shaaaaame
 // -------------------------
 @import 'shame';

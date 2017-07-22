@@ -1,12 +1,6 @@
 .hero {
-  background-color: $gray-light;
   padding: space(10) space(4);
   text-align: center;
-  margin-bottom: space(2);
-
-  @include bp(medium) {
-    margin-bottom: space(0);
-  }
 }
 
 .hero__text {
