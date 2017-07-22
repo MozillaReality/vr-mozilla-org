@@ -37,38 +37,97 @@ $susy: (
   }
 }
 
-.span {
 
-  @include bp(medium) {
-    float: left;
+// Breakpoint specific column classes
+// ----------------------------------
 
-    &--last {
-      float: right;
+// columns for x-small+
+// ex: col-xs-8 or col-xs-3
+@for $i from 0 through $columns {
+  .col-xs-#{$i} {
+    width: 100%;
+  }
+}
+
+// columns for large+
+// ex: col-lg-8 or col-lg-3
+@for $i from 1 through $columns {
+  .col-lg-#{$i} {
+    width: span(all);
+
+    @include bp(large) {
+      float: left;
+      width: span($i);
+    }
+
+  }
+}
+
+// columns for medium+
+// ex: col-md-8 or col-md-3
+@for $i from 1 through $columns {
+  .col-md-#{$i} {
+    width: span(all);
+
+    @include bp(medium) {
+      float: left;
+      width: span($i);
+    }
+  }
+}
+
+// columns for small+
+// ex: col-sm-8 or col-sm-3
+@for $i from 1 through $columns {
+  .col-sm-#{$i} {
+    width: span(all);
+
+    @include bp(small) {
+      float: left;
+      width: span($i);
     }
   }
 }
 
 
-.span-1-3 {
-  width: span(all);
-
-  @include bp(medium) {
-    width: span(5);
-  }
-
-  @include bp(large) {
-    width: span(4);
+// offset (push) columns for x-small+
+// ex: col-xs-offset-8 or col-xs-offset-3
+@for $i from 1 through $columns {
+  .col-xs-offset-#{$i} {
+    margin-left: span($i);
   }
 }
 
-.span-2-3 {
-  width: span(all);
-
-  @include bp(medium) {
-    width: span(7);
+// offset (push) columns for small+
+// ex: col-sm-offset-8 or col-sm-offset-3
+@for $i from 1 through $columns {
+  .col-sm-offset-#{$i} {
+    @include bp(small) {
+      margin-left: span($i);
+    }
   }
+}
 
-  @include bp(large) {
-    width: span(8);
+// offset (push) columns for medium+
+// ex: col-md-offset-8 or col-md-offset-3
+@for $i from 1 through $columns {
+  .col-md-offset-#{$i} {
+    @include bp(medium) {
+      margin-left: span($i);
+    }
   }
+}
+
+// offset (push) columns for large+
+// ex: col-lg-offset-8 or col-lg-offset-3
+@for $i from 1 through $columns {
+  .col-lg-offset-#{$i} {
+    @include bp(large) {
+      margin-left: span($i);
+    }
+  }
+}
+
+.col-last {
+  float: right;
 }

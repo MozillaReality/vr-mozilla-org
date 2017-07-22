@@ -19,7 +19,8 @@ export default () => (
       link="http://www.mozilla.org"
     />
 
-    <div className="span span-1-3">
+    {/* <div className="span span-1-3"> */}
+    <div className="col-md-5 col-lg-5">
       <ResourceCard
         lead="Build VR"
         title="Firefox Nightly"
@@ -42,7 +43,8 @@ export default () => (
         linkText="Get it Now"
       />
     </div>
-    <div className="span--last span-2-3">
+    {/* <div className="span--last span-2-3"> */}
+    <div className="col-md-7 col-lg-8 col-last">
       <DemoCard
         bg={`${baseUrl}/static/img/demo/apainter.png`}
         lead="Built with HTML & WebGL"

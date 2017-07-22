@@ -3,14 +3,26 @@
 }
 
 .logo {
-  float: left;
-  display: inline;
+  display: block;
   height: space(5);
   width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include bp(medium) {
+    margin: auto;
+    float: left;
+    display: inline;
+  }
 }
 
 .nav {
   float: right;
+  display: none;
+
+  @include bp(medium) {
+    display: block;
+  }
 }
 
 .nav__list {
