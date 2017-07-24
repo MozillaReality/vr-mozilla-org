@@ -8,6 +8,8 @@ import DemoCard from '../components/DemoCard';
 import ResourceCard from '../components/ResourceCard';
 import Experiment from '../components/Experiment';
 import Experience from '../components/Experience';
+import AdditionalResources from '../components/AdditionalResources';
+import About from '../components/About';
 
 export default () => (
   <Layout title="Old Fashioned | Home">
@@ -63,5 +65,7 @@ export default () => (
     </div>
     <Experiment />
     <Experience />
+    <AdditionalResources />
+    <About />
   </Layout>
 );
