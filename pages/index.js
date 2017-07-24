@@ -7,6 +7,7 @@ import Hero from '../components/Hero';
 import DemoCard from '../components/DemoCard';
 import ResourceCard from '../components/ResourceCard';
 import Experiment from '../components/Experiment';
+import Experience from '../components/Experience';
 
 export default () => (
   <Layout title="Old Fashioned | Home">
@@ -61,5 +62,6 @@ export default () => (
       />
     </div>
     <Experiment />
+    <Experience />
   </Layout>
 );

@@ -30,6 +30,10 @@ const Experiment = () => (
       </p>
     </div>
 
+    <div className="experiment__link">
+      <a href="https://codepen.io/mozvr/pen/BjygdO" rel="noreferrer noopener" target="_blank">View and edit an example on Codepen</a>
+    </div>
+
     <div className="experiment__code">
       <SyntaxHighlighter language="xml" style={hybrid}>{codeString}</SyntaxHighlighter>;
     </div>
@@ -43,10 +47,6 @@ const Experiment = () => (
         <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" />
         <a-sky color="#bbbbbb" />
       </a-scene>
-    </div>
-
-    <div className="experiment__link">
-      <a href="https://codepen.io/mozvr/pen/BjygdO" rel="noreferrer noopener" target="_blank">View and edit this example on Codepen</a>
     </div>
   </div>
 );
