@@ -11,3 +11,17 @@
   margin-right: auto;
   margin-bottom: space(8);
 }
+
+.experience__devices {
+  background-image: url('/static/img/experience/devices.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include bp(medium) {
+    height: 248px;
+  }
+
+  @include bp(large) {
+    height: 360px;
+  }
+}

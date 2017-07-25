@@ -11,8 +11,12 @@ import Experience from '../components/Experience';
 import AdditionalResources from '../components/AdditionalResources';
 import About from '../components/About';
 
+const desc = `
+  VR for the free and open Web.
+`;
+
 export default () => (
-  <Layout title="Old Fashioned | Home">
+  <Layout title="Mozilla VR | Home" desc={desc}>
     <Hero />
     <DemoCard
       bg={`${baseUrl}/static/img/demo/inspirit.png`}
