@@ -23,7 +23,7 @@ const codeString = `
 const Experiment = () => (
   <div className="experiment">
     <div className="experiment__text">
-      <h2>Experiment with A-Frame</h2>
+      <h2>Build VR with A-Frame</h2>
       <p>
         Create virtual reality experiences for the browser with A-Frame.
         This Mozilla-supported framework is powerful, open source, and is easy to learn.

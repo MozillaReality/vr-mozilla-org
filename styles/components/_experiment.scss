@@ -7,6 +7,10 @@
   padding: space(8) space(6) 0;
   text-align: center;
   float: left;
+
+  @include bp(large) {
+    padding: space(8) 384px 0;
+  }
 }
 
 .experiment__code {

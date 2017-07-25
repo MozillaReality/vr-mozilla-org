@@ -1,5 +1,5 @@
 const About = () => (
-  <div className="about">
+  <div className="about" id="mission">
     <div className="about__content">
       <div>
         <img className="mb6" src="/static/img/logo.svg" alt="Mozilla Logo" />

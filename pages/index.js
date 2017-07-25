@@ -20,51 +20,51 @@ export default () => (
     <Hero />
     <DemoCard
       bg={`${baseUrl}/static/img/demo/inspirit.png`}
-      lead="Built with HTML & WebGL"
+      lead="An Immersive VR World"
       title="Inspirit: An Interactive Story"
-      linkText="Explore A-Painter"
-      link="http://www.mozilla.org"
+      linkText="Explore Now"
+      link="http://inspirit.unboring.net/"
     />
 
     {/* <div className="span span-1-3"> */}
     <div className="col-md-5 col-lg-5">
       <ResourceCard
-        lead="Build VR"
+        lead="Experience VR"
         title="Firefox Nightly"
-        desc="Experience WebVR with the most advanced browser available"
-        link="http://www.mozilla.org"
+        desc="Experience WebVR with Mozilla's most advanced web browser."
+        link="https://www.mozilla.org/en-US/firefox/nightly/all/"
         linkText="Get it Now"
       />
       <ResourceCard
         lead="Build VR"
-        title="Firefox Nightly"
-        desc="Experience WebVR with the most advanced browser available"
-        link="http://www.mozilla.org"
-        linkText="Get it Now"
+        title="A-Frame"
+        desc="A-Frame allows developers to easily create VR experiences for the browser."
+        link="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Building_up_a_basic_demo_with_A-Frame"
+        linkText="Get Started"
       />
       <ResourceCard
-        lead="Build VR"
-        title="Firefox Nightly"
-        desc="Experience WebVR with the most advanced browser available"
-        link="http://www.mozilla.org"
-        linkText="Get it Now"
+        lead="Explore VR"
+        title="VR Gallery"
+        desc="Developers and artist are bringing new VR experiences to the web every day."
+        link="http://vrlist.io/"
+        linkText="View Gallery"
       />
     </div>
     {/* <div className="span--last span-2-3"> */}
     <div className="col-md-7 col-lg-8 col-last">
       <DemoCard
         bg={`${baseUrl}/static/img/demo/apainter.png`}
-        lead="Built with HTML & WebGL"
-        title="Inspirit: An Interactive Story"
+        lead="Paint in Virtual Reality"
+        title="A-Painter"
         linkText="Explore A-Painter"
-        link="http://www.mozilla.org"
+        link="https://aframe.io/a-painter/"
       />
       <DemoCard
         bg={`${baseUrl}/static/img/demo/pingpong.png`}
-        lead="Built with HTML & WebGL"
-        title="Inspirit: An Interactive Story"
-        linkText="Explore A-Painter"
-        link="http://www.mozilla.org"
+        lead="A Virtual Reality Game"
+        title="Konterball"
+        linkText="Play Now"
+        link="https://konterball.com/"
       />
     </div>
     <Experiment />

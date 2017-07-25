@@ -12,7 +12,8 @@
 
 .footer__title {
   font-weight: 600;
-  margin-top: space(2);
+  letter-spacing: .5px;
+  margin: space(4) 0 space(2);
   display: block;
 
   @include bp(medium) {
@@ -24,10 +25,18 @@
   margin: 0;
   padding: 0;
 
+  li {
+    margin-bottom: space(1);
+  }
+
   a {
-    @include typesize(-1);
     color: $white;
+    font-size: 14px;
     font-weight: 400;
+  }
+
+  a:hover {
+    border-bottom: 1px solid $white;
   }
 }
 
