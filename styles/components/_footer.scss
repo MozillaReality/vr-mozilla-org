@@ -33,6 +33,8 @@
     color: $white;
     font-size: 14px;
     font-weight: 400;
+    border-bottom: 1px solid $black;
+    transition: border-bottom .2s $base-ease;
   }
 
   a:hover {

@@ -54,17 +54,17 @@ export default () => (
     <div className="col-md-7 col-lg-8 col-last">
       <DemoCard
         bg={`${baseUrl}/static/img/demo/apainter.png`}
-        lead="Paint in Virtual Reality"
+        lead="Build with A-Frame"
         title="A-Painter"
-        linkText="Explore A-Painter"
-        link="https://aframe.io/a-painter/"
+        linkText="Learn More"
+        link="https://blog.mozvr.com/a-painter/"
       />
       <DemoCard
         bg={`${baseUrl}/static/img/demo/pingpong.png`}
         lead="A Virtual Reality Game"
         title="Konterball"
         linkText="Play Now"
-        link="https://konterball.com/"
+        link="https://www.webvrexperiments.com/experiment/konterball"
       />
     </div>
     <Experiment />

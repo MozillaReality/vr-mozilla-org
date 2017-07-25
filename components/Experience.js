@@ -27,7 +27,7 @@ class Experience extends React.Component {
           <NoSSR>
             <Parallax
               className="hidden-mobile"
-              offsetYMax={5}
+              offsetYMax={8}
               offsetYMin={-5}
               offsetXMin={-5}
               offsetXMax={2}
@@ -39,7 +39,7 @@ class Experience extends React.Component {
         </div>
 
         <div className="mt3">
-          <a href="http://www.mozilla.org" alt="How to experience WebVR">How to enjoy WebVR </a>
+          <a href="https://www.webvrexperiments.com/how" rel="noreferrer noopener" target="_blank" alt="How to experience WebVR">How to enjoy WebVR </a>
         </div>
 
       </div>
