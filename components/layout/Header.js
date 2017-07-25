@@ -12,6 +12,7 @@ const Header = () => (
           <li className="nav__item"><a href="https://aframe.io/">Explore A-frame</a></li>
           <li className="nav__item"><a href="/#experience">How to Experience</a></li>
           <li className="nav__item"><a href="/#mission">Our Mission</a></li>
+          <li className="nav__item"><a href="https://blog.mozvr.com/">Blog</a></li>
         </ul>
       </nav>
     </div>

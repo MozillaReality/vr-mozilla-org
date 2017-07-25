@@ -7,7 +7,7 @@ const About = () => (
           Our mission is to keep the Internet open to innovative creators
           and builders anywhere on the web.
         </p>
-        <a href="http://www.mozilla.org" target="_blank">Read More</a>
+        <a href="http://www.mozilla.org" rel="noreferrer noopener" target="_blank">Read More</a>
       </div>
     </div>
     <div className="about__photo" />
