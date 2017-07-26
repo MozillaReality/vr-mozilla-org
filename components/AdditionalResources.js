@@ -1,6 +1,8 @@
+import Img from './Img';
+
 const AdditionalResources = () => (
   <div className="additional" >
-    <img className="mb4" src="/static/img/additional/link.svg" alt="additional link" />
+    <Img className="mb4" src="/static/img/additional/link.svg" alt="additional link" />
     <h2 className="mb6">Tutorials & Resources</h2>
 
     <div className="additional__resource">

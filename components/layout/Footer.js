@@ -1,9 +1,11 @@
+import Img from '../Img';
+
 export default () => (
   <div className="container">
     <footer className="footer">
       <div className="col-md-4">
         <a href="http://mozilla.org">
-          <img className="footer__logo" src="/static/img/moz-logo.svg" alt="Mozila" />
+          <Img className="footer__logo" src="/static/img/moz-logo.svg" alt="Mozila" />
         </a>
       </div>
       <div className="col-md-4">

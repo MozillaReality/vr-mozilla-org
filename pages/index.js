@@ -44,8 +44,8 @@ export default () => (
       />
       <ResourceCard
         lead="Explore VR"
-        title="VR Gallery"
-        desc="Developers and artist are bringing new VR experiences to the web every day."
+        title="VR List"
+        desc="Explore an independently curted list of VR experiences."
         link="http://vrlist.io/"
         linkText="View Gallery"
       />
