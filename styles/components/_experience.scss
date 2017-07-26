@@ -17,7 +17,7 @@
   background-size: 100% auto;
 
   @include bp(medium) {
-    height: 248px;
+    height: auto;
   }
 
   @include bp(large) {

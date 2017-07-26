@@ -28,6 +28,9 @@ const Meta = ({ title, desc }) => (
       <meta name="twitter:image" content="/static/img/about/bg.png" />
       <link rel="icon" type="image/png" href="/static/img/favicon16.png?s=16" sizes="16x16" />
       <link rel="icon" type="image/png" href="/static/img/favicon32.png?s=32" sizes="32x32" />
+      <script async src="/static/js/ga.js" />
+      <script async src="https://www.google-analytics.com/analytics.js" />
+      <script async src="/static/js/autotrack.js" />
     </Head>
   </div>
 );

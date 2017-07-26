@@ -29,10 +29,12 @@ $susy: (
   }
 
   @include bp(medium) {
-    width: (map-get($breakpoints, medium));
+    width: 100%;
+    // width: (map-get($breakpoints, medium));
   }
 
   @include bp(large) {
+    padding: 0;
     width: (map-get($breakpoints, large));
   }
 }

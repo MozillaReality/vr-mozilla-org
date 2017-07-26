@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Meta from './Meta';
 
 const Layout = ({ children, desc, title = 'Whiskey, Sugar and Bitters' }) => (
-  <div>
+  <div className="layout__wrap">
     <Meta title={title} desc={desc} />
     <Header />
 

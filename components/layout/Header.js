@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import variables from '../../variables';
 
 const baseUrl = variables.prodUrl;

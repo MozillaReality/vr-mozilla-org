@@ -1,3 +1,10 @@
 .content {
   background-color: $gray-light;
 }
+
+.layout__wrap {
+
+  @include bp(medium) {
+    padding: 0 gutter();
+  }
+}
