@@ -75,7 +75,7 @@
       }
 
       @if $unit == 'rem' {
-        $px : append($px, ($val * $base-font-size + px));
+        $px : append($px, ($val * $base-font-size));
         $rem: append($rem, $value);
       }
     }

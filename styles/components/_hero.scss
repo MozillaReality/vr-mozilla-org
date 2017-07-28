@@ -1,6 +1,10 @@
 .hero {
-  padding: space(10) space(4);
+  padding: space(11) space(4);
   text-align: center;
+
+  h1 {
+    margin-bottom: 0;
+  }
 }
 
 .hero__text {

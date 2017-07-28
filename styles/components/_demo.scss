@@ -26,13 +26,26 @@
 .demo__lead {
   font-family: 'Zilla Slab Highlight', $sans-serif;
   @include typesize(1);
+
+  @include bp(large) {
+    @include rem(font-size, 1.7rem);
+  }
 }
 
 .demo__title {
   margin-bottom: space(4);
+
+  @include bp(large) {
+    @include rem(font-size, 3rem);
+  }
 }
+
 .demo__link {
   margin-bottom: 0;
+
+  @include bp(large) {
+    @include rem(font-size, 1.2rem);
+  }
 
   a {
     color: $purple-light;

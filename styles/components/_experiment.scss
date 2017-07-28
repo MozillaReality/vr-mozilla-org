@@ -4,12 +4,12 @@
 
 .experiment__text {
   width: span(all);
-  padding: space(8) space(6) 0;
+  padding: space(7) space(6) 0;
   text-align: center;
   float: left;
 
   @include bp(large) {
-    padding: space(8) 384px 0;
+    padding: space(11) 384px 0;
   }
 }
 
@@ -42,5 +42,5 @@
   width: span(all);
   float: left;
   text-align: center;
-  padding: space(4) 0 space(8);
+  padding: space(4) 0 space(11);
 }

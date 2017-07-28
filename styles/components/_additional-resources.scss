@@ -1,6 +1,6 @@
 .additional {
   @include clearfix;
-  padding: space(8) 0;
+  padding: space(7) 0 space(11);
   background-color: $black;
   color: $white;
   text-align: center;
@@ -25,14 +25,13 @@
 
   a {
     color: $purple-dark;
-    border-bottom: 0 solid rgba(156, 156, 255, 0);
+    border-bottom: 2px solid $purple-dark;
     transition: color $base-time $base-ease,
                 border-bottom $base-time $base-ease;
   }
 
   a:hover {
     color: lighten($purple-dark, 10%);
-    border-bottom: 2px solid lighten($purple-dark, 10%);
   }
 
   &--last {

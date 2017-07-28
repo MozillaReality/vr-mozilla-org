@@ -23,10 +23,18 @@
   font-family: 'Zilla Slab Highlight', $sans-serif;
   margin-bottom: space(2);
   display: block;
+
+  @include bp(large) {
+    @include rem(font-size, 1.7rem);
+  }
 }
 
 .resource__title {
   margin-bottom: space(4);
+
+  @include bp(large) {
+    @include rem(font-size, 3rem);
+  }
 }
 
 .resource__desc {
@@ -35,6 +43,10 @@
 
 .resource__link {
   margin-bottom: 0;
+
+  @include bp(large) {
+    @include rem(font-size, 1.2rem);
+  }
 
   a {
     color: $purple-light;
