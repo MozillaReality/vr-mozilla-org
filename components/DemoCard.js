@@ -10,7 +10,7 @@ const DemoCard = (props) => {
       <div className="demo__content">
         <p className="demo__lead">{props.lead}</p>
         <h2 className="demo__title">{props.title}</h2>
-        <p className="demo__link"><a href={props.link}>{props.linkText}</a></p>
+        <p className="demo__link"><a target="_blank" href={props.link}>{props.linkText}</a></p>
       </div>
     </div>
   );

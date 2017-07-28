@@ -9,20 +9,20 @@ export default () => (
         </a>
       </div>
       <div className="col-md-4">
-        <span className="footer__title">Mozilla</span>
+        <span className="footer__title">Additional Links</span>
         <ul className="footer__list">
-          <li><a href="https://www.mozilla.org/en-US/about/" rel="noreferrer noopener" target="_blank">About</a></li>
-          <li><a href="https://www.mozilla.org/en-US/contact/" rel="noreferrer noopener" target="_blank">Contact Us</a></li>
-          <li><a href="https://donate.mozilla.org/en-US/?presets=100,50,25,15&amount=50&utm_source=mozilla.org&utm_medium=referral&utm_content=footer&currency=usd" rel="noreferrer noopener" target="_blank">Donate</a></li>
+          <li><a href="https://w3c.github.io/webvr/" rel="noreferrer noopener" target="_blank">WebVR Spec</a></li>
+          <li><a href="https://mail.mozilla.org/listinfo/web-vr-discuss" rel="noreferrer noopener" target="_blank">WebVR Newsletter</a></li>
+          <li><a href="https://webvr-slack.herokuapp.com/" rel="noreferrer noopener" target="_blank">WebVR Slack</a></li>
+          <li><a href="https://aframe.io/blog/" rel="noreferrer noopener" target="_blank">A-Frame Blog</a></li>
         </ul>
       </div>
       <div className="col-md-4 col-last">
         <span className="footer__title">Mozilla</span>
         <ul className="footer__list">
-          <li><a href="https://www.mozilla.org/en-US/firefox/" rel="noreferrer noopener" target="_blank">Download Firefox Web Browser</a></li>
-          <li><a href="https://www.mozilla.org/en-US/firefox/desktop/" rel="noreferrer noopener" target="_blank">Desktop Browser for Mac, Windows, Linux</a></li>
-          <li><a href="https://www.mozilla.org/en-US/firefox/android/" rel="noreferrer noopener" target="_blank">Mobile Browser for Android</a></li>
-          <li><a href="https://www.mozilla.org/en-US/firefox/ios/" rel="noreferrer noopener" target="_blank">Mobile Browser for iOS</a></li>
+          <li><a href="https://www.mozilla.org/en-US/about/" rel="noreferrer noopener" target="_blank">About</a></li>
+          <li><a href="https://www.mozilla.org/en-US/contact/" rel="noreferrer noopener" target="_blank">Contact Us</a></li>
+          <li><a href="https://donate.mozilla.org/en-US/?presets=100,50,25,15&amount=50&utm_source=mozilla.org&utm_medium=referral&utm_content=footer&currency=usd" rel="noreferrer noopener" target="_blank">Donate</a></li>
         </ul>
       </div>
       <div className="footer__legal">

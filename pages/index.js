@@ -12,7 +12,7 @@ import AdditionalResources from '../components/AdditionalResources';
 import About from '../components/About';
 
 const desc = `
-  VR for the free and open Web.
+  Virtual Reality for the free and open Web.
 `;
 
 export default () => (
@@ -22,8 +22,8 @@ export default () => (
       bg={`${baseUrl}/static/img/demo/inspirit.png`}
       lead="An Immersive VR World"
       title="Inspirit: An Interactive Story"
-      linkText="Explore Now"
-      link="http://inspirit.unboring.net/"
+      linkText="Learn More"
+      link="http://www.unboring.net/cases/inspirit.html"
     />
 
     {/* <div className="span span-1-3"> */}
@@ -31,21 +31,21 @@ export default () => (
       <ResourceCard
         lead="Experience VR"
         title="Firefox Nightly"
-        desc="Experience WebVR with Mozilla's most advanced web browser."
-        link="https://www.mozilla.org/en-US/firefox/nightly/all/"
+        desc="Experience WebVR with Firefox; Mozilla's Fast, private and ethical web browser."
+        link="https://www.mozilla.org/en-US/firefox/"
         linkText="Get it Now"
       />
       <ResourceCard
         lead="Build VR"
         title="A-Frame"
         desc="A-Frame allows developers to easily create VR experiences for the browser."
-        link="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Building_up_a_basic_demo_with_A-Frame"
+        link="https://aframe.io/docs/0.6.0/introduction/"
         linkText="Get Started"
       />
       <ResourceCard
         lead="Explore VR"
         title="VR List"
-        desc="Explore an independently curted list of VR experiences."
+        desc="Explore an independently curated list of VR experiences."
         link="http://vrlist.io/"
         linkText="View Gallery"
       />
