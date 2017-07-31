@@ -16,6 +16,9 @@ const Meta = ({ title, desc }) => (
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      /*
+      Duplicate meta tag above.
+      */
       <meta property="og:url" content="http://vr.mozilla.org" />
       <meta property="og:title" content="Mozilla VR" />
       <meta property="og:description" content="VR for a free and open web" />
@@ -31,6 +34,12 @@ const Meta = ({ title, desc }) => (
       <script async src="/static/js/ga.js" />
       <script async src="https://www.google-analytics.com/analytics.js" />
       <script async src="/static/js/autotrack.js" />
+      /*
+      Would be great to check for DNT prior to executing tracking JS. We have a lib in the bedrock repo:
+
+      https://github.com/mozilla/bedrock/blob/master/media/js/base/dnt-helper.js
+      https://github.com/mozilla/bedrock/blob/master/media/js/base/gtm-snippet.js#L12
+      */
     </Head>
   </div>
 );

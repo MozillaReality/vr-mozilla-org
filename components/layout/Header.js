@@ -8,6 +8,9 @@ const Header = () => (
         <ul className="nav__list">
           <li className="nav__item"><a href="https://blog.mozvr.com/" target="_blank">Blog</a></li>
           <li className="nav__item"><a href="https://aframe.io/" target="_blank">Explore A-Frame</a></li>
+          /*
+          Can we add rel="noopener" to the links above?
+          */
         </ul>
       </nav>
     </div>

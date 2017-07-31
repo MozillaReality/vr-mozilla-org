@@ -6,6 +6,9 @@ const ResourceCard = props => (
     <h2 className="resource__title">{props.title}</h2>
     <p className="resource__desc">{props.desc}</p>
     <span className="demo__link"><a target="_blank" href={props.link}>{props.linkText}</a></span>
+    /*
+    Add rel="noopener"?
+    */
   </div>
 );
 
