@@ -10,6 +10,9 @@ const About = () => (
           and builders anywhere on the web.
         </p>
         <a href="http://www.mozilla.org" rel="noreferrer noopener" target="_blank">Read More</a>
+        /*
+        Change to https
+        */
       </div>
     </div>
     <div className="about__photo" />
