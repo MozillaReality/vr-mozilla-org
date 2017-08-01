@@ -32,7 +32,7 @@ export default () => (
         lead="Experience VR"
         title="Firefox Nightly"
         desc="Experience WebVR with Firefox; Mozilla's Fast, private and ethical web browser."
-        link="https://www.mozilla.org/en-US/firefox/"
+        link="https://www.mozilla.org/firefox/channel/desktop/#nightly"
         linkText="Get it Now"
       />
       <ResourceCard
