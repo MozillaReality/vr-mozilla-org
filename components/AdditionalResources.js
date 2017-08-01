@@ -7,12 +7,12 @@ const AdditionalResources = () => (
 
     <div className="additional__resource">
       <span>Links, sources<br /> and emulators</span>
-      <a href="http://webvr.info" target="_blank">wevbr.info</a>
+      <a href="https://webvr.info" rel="noopener noreferrer">wevbr.info</a>
     </div>
     <hr className="additional__hr" />
     <div className="additional__resource additional__resource--last">
-      <span>Browser and devices<br /> compatibility charts</span>
-      <a href="http://webvr.rocks" target="_blank">wevbr.rocks</a>
+      <span>Browser and devices<br /> compatibility support</span>
+      <a href="https://webvr.rocks" rel="noopener noreferrer">wevbr.rocks</a>
     </div>
   </div>
 );

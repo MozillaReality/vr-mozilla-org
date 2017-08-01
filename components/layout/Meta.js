@@ -15,8 +15,7 @@ const Meta = ({ title, desc }) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta property="og:url" content="http://vr.mozilla.org" />
+      <meta property="og:url" content="https://vr.mozilla.org" />
       <meta property="og:title" content="Mozilla VR" />
       <meta property="og:description" content="VR for a free and open web" />
       <meta property="og:image" content="/static/img/about/bg.png" />

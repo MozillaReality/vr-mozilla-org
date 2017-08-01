@@ -5,7 +5,7 @@ const ResourceCard = props => (
     <span className="resource__lead">{props.lead}</span>
     <h2 className="resource__title">{props.title}</h2>
     <p className="resource__desc">{props.desc}</p>
-    <span className="demo__link"><a target="_blank" href={props.link}>{props.linkText}</a></span>
+    <span className="demo__link"><a rel="noopener noreferrer" href={props.link}>{props.linkText}</a></span>
   </div>
 );
 
