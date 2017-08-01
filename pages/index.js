@@ -35,6 +35,12 @@ export default () => (
         link="https://www.mozilla.org/en-US/firefox/"
         linkText="Get it Now"
       />
+      /*
+      If calling out Nightly specifically, probably better to send users to:
+      https://www.mozilla.org/firefox/channel/desktop/#nightly
+
+      It's sadly darn-near impossible to find Nightly from /firefox. :/
+      */
       <ResourceCard
         lead="Build VR"
         title="A-Frame"
