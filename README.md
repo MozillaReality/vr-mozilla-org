@@ -1,5 +1,6 @@
-# Old Fashioned
-A Next.js starter with scss, autoprefixer, SSR, and static generator
+# Mozilla VR site
+
+Mozilla VR site, built using Next.js starter with scss, autoprefixer, SSR, and static generator
 
 ## Installation
 
