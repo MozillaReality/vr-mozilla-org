@@ -13,16 +13,16 @@
 //   ],
 // };
 
-const uncssOptions = {
-  html: ['dist/index.html'],
-  ignore: [],
-  ignoreSheets: ['/static/**/*'],
-};
+// const uncssOptions = {
+//   html: ['dist/index.html'],
+//   ignore: [],
+//   ignoreSheets: ['/static/**/*'],
+// };
 
-module.exports = ctx => ({
+module.exports = () => ({
   plugins: {
     'postcss-easy-import': { prefix: '_' },
     autoprefixer: {},
-    'postcss-uncss': ctx.env === 'production' ? uncssOptions : false,
+    // 'postcss-uncss': ctx.env === 'production' ? uncssOptions : false,
   },
 });
