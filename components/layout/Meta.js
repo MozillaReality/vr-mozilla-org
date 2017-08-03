@@ -31,6 +31,8 @@ const Meta = ({ title, desc }) => (
       <script async src="/static/js/autotrack.js" />
       <script async src="https://www.google-analytics.com/analytics.js" />
       <script async src="/static/js/ga.js" />
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" />
+      <script src="/static/js/webfont.js" />
     </Head>
   </div>
 );
