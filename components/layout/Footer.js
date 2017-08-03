@@ -11,6 +11,7 @@ export default () => (
       <div className="col-md-4">
         <span className="footer__title">Additional Links</span>
         <ul className="footer__list">
+          <li><a href="https://developer.mozilla.org/docs/Web/API/WebVR_API/Using_the_WebVR_API">Using WebVR API (MDN)</a></li>
           <li><a href="https://w3c.github.io/webvr/">WebVR Spec</a></li>
           <li><a href="https://mail.mozilla.org/listinfo/web-vr-discuss">WebVR Newsletter</a></li>
           <li><a href="https://webvr-slack.herokuapp.com/">WebVR Slack</a></li>

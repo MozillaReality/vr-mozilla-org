@@ -20,12 +20,11 @@ export default () => (
   <Layout title="Mozilla VR | Home" desc={desc}>
     <Hero />
     <VideoCard
-      bg={`${baseUrl}/static/img/demo/inspirit.png`}
+      bg={`${baseUrl}/static/img/video/bg.png`}
       lead="WebVR + A-Frame"
-      title="View our WebVR Showcase"
-      linkText="Learn More"
-      link="http://www.unboring.net/cases/inspirit.html"
-      videoID="B3qIw26PTI8"
+      title="View WebVR Showcase"
+      linkText="Watch Now"
+      videoID="Le8pTXQqM3s"
     />
 
     {/* <div className="span span-1-3"> */}
@@ -56,17 +55,17 @@ export default () => (
     <div className="col-md-7 col-lg-8 col-last">
       <DemoCard
         bg={`${baseUrl}/static/img/demo/apainter.png`}
-        lead="Build with A-Frame"
+        lead="Create with A-Frame"
         title="A-Painter"
         linkText="Learn More"
         link="https://blog.mozvr.com/a-painter/"
       />
       <DemoCard
-        bg={`${baseUrl}/static/img/demo/pingpong.png`}
-        lead="A Virtual Reality Game"
-        title="Konterball"
+        bg={`${baseUrl}/static/img/demo/ablast.png`}
+        lead="Play with A-Frame"
+        title="A-Blast"
         linkText="Play Now"
-        link="https://www.webvrexperiments.com/experiment/konterball"
+        link="https://aframe.io/a-blast/"
       />
     </div>
     <Experiment />

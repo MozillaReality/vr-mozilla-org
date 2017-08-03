@@ -3,6 +3,7 @@
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 import React from 'react';
+import ReactGA from 'react-ga';
 import Img from './Img';
 
 
@@ -16,6 +17,11 @@ class VideoCard extends React.Component {
 
   openModal = () => {
     this.setState({ isOpen: true });
+    ReactGA.event({
+      category: 'video',
+      action: 'play',
+      label: 'Open Video Modal',
+    });
   }
 
   closeModal = () => {
@@ -26,9 +32,10 @@ class VideoCard extends React.Component {
     const cardStyle = {
       backgroundImage: `url('${this.props.bg}')`,
     };
+
     return (
       <div className="video" style={cardStyle}>
-        <div className="video__hover" onClick={this.openModal}>
+        <div className="video__hover" onClick={this.openModal} >
           <Img className="video__icon" src="/static/img/video/play-button.svg" alt="play" />
         </div>
         <div className="video__content">
