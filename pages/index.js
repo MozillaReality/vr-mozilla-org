@@ -4,6 +4,7 @@ import { prodUrl as baseUrl } from '../variables';
 
 // components
 import Hero from '../components/Hero';
+import VideoCard from '../components/VideoCard';
 import DemoCard from '../components/DemoCard';
 import ResourceCard from '../components/ResourceCard';
 import Experiment from '../components/Experiment';
@@ -18,12 +19,13 @@ const desc = `
 export default () => (
   <Layout title="Mozilla VR | Home" desc={desc}>
     <Hero />
-    <DemoCard
+    <VideoCard
       bg={`${baseUrl}/static/img/demo/inspirit.png`}
-      lead="An Immersive VR World"
-      title="Inspirit: An Interactive Story"
+      lead="WebVR + A-Frame"
+      title="View our WebVR Showcase"
       linkText="Learn More"
       link="http://www.unboring.net/cases/inspirit.html"
+      videoID="B3qIw26PTI8"
     />
 
     {/* <div className="span span-1-3"> */}

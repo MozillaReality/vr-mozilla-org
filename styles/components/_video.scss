@@ -1,0 +1,153 @@
+.video {
+  background-size: cover;
+  padding: space(3);
+  margin-bottom: space(2);
+  box-shadow: inset 0 200px 200px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    .video__hover {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, .5);
+    }
+  }
+
+  @include bp(medium) {
+    margin-bottom: space(4);
+    padding: space(3);
+    display: flex;
+    height: 400px;
+    box-shadow: inset 0px -200px 100px rgba(0, 0, 0, 0.32);
+    position: relative;
+  }
+
+  @include bp(large) {
+    height: 544px;
+    padding: space(6);
+  }
+}
+
+.video__hover {
+  position: absolute;
+  display: none;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: .7;
+  transition: opacity $base-time $base-ease,
+              background-color $base-time $base-ease;
+  cursor: pointer;
+
+  @include bp(medium) {
+    display: flex;
+  }
+}
+
+.video__content {
+  align-self: flex-end;
+  color: $white;
+}
+
+.video__icon {
+  height: 104px;
+  width: auto;
+}
+
+.video__lead {
+  font-family: 'Zilla Slab Highlight', $sans-serif;
+  @include typesize(1);
+
+  @include bp(large) {
+    @include rem(font-size, 1.7rem);
+  }
+}
+
+.video__title {
+  margin-bottom: space(4);
+
+  @include bp(medium) {
+    margin-bottom: 0;
+  }
+
+  @include bp(large) {
+    @include rem(font-size, 3rem);
+  }
+}
+
+.video__link {
+  margin-bottom: 0;
+
+  @include bp(medium) {
+    display: none;
+  }
+
+  @include bp(large) {
+    @include rem(font-size, 1.2rem);
+  }
+
+  a {
+    color: $purple-light;
+    font-weight: bold;
+    border-bottom: 2px solid $purple-light;
+    transition: color $base-time $base-ease;
+  }
+
+  a:hover {
+    color: lighten($purple-light, 10%);
+  }
+}
+
+// MODAL
+
+.vidmodal {
+  background-color: $white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+}
+
+.vidmodal__close {
+  margin: space(2) auto space(1);
+  display: block;
+  background-color: $black;
+  color: $white;
+  font-weight: bold;
+  padding: space(1) space(2);
+
+  &:hover {
+    background-color: lighten($black, 15%);
+  }
+}
+
+.vidmodal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.vidmodal__vidwrap {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
