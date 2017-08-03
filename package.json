@@ -8,7 +8,7 @@
     "dev": "next dev",
     "build": "next build && next export -o dist && cp CNAME dist",
     "start": "next start",
-    "deploy": "npm run build && touch dist/.nojekyll && gh-pages -d dist --dotfiles --repo git@github.com:mozvr/mozvr.github.io.git"
+    "deploy": "npm run build && touch dist/.nojekyll && gh-pages -d dist --dotfiles --repo git@github.com:mozvr/mozvr.github.io.git --branch master"
   },
   "author": "Dan Brown",
   "license": "ISC",
