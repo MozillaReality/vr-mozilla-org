@@ -20,11 +20,11 @@ export default () => (
   <Layout title="Mozilla VR | Home" desc={desc}>
     <Hero />
     <VideoCard
-      bg={`${baseUrl}/static/img/video/bg2.png`}
+      bg={`${baseUrl}/static/img/video/bg.png`}
       lead="WebVR + A-Frame"
       title="Watch WebVR Showcase"
       linkText="Watch Now"
-      videoID="yweLp54MTxQ"
+      videoID="_fbFCr58WZ4"
     />
 
     {/* <div className="span span-1-3"> */}
@@ -32,7 +32,7 @@ export default () => (
       <ResourceCard
         lead="Experience VR"
         title="Firefox Nightly"
-        desc="Experience WebVR with Firefox; Mozilla's Fast, private and ethical web browser."
+        desc="Experience WebVR with Firefox; Mozilla's fast, private and ethical web browser."
         link="https://www.mozilla.org/firefox/channel/desktop/#nightly"
         linkText="Get it Now"
       />
