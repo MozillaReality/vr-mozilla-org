@@ -4,6 +4,10 @@
   background-color: $black;
   color: $white;
   text-align: center;
+
+  h2 {
+    margin-bottom: space(6);
+  }
 }
 
 .additional__resource {

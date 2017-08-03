@@ -10,6 +10,10 @@
   }
 }
 
+.about__logo {
+  height: 48px;
+}
+
 .about__content {
 
   @include bp(medium) {

@@ -19,7 +19,7 @@ class Experience extends React.Component {
   render() {
     return (
       <div className="experience" id="experience">
-        <h2>How to Experience VR</h2>
+        <h2 className="h1">How to Experience VR</h2>
         <p className="experience__text">
           Experience WebVR on your phone, computer or headset.
         </p>

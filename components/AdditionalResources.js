@@ -3,7 +3,7 @@ import Img from './Img';
 const AdditionalResources = () => (
   <div className="additional" >
     <Img className="mb4" src="/static/img/additional/link.svg" alt="additional link" />
-    <h2 className="mb6">Tutorials & Resources</h2>
+    <h2 className="h1">Tutorials & Resources</h2>
 
     <div className="additional__resource">
       <span>Links, sources<br /> and emulators</span>
