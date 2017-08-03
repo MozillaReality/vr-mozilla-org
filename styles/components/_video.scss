@@ -4,25 +4,23 @@
   margin-bottom: space(2);
   box-shadow: inset 0 200px 200px rgba(0, 0, 0, 0.5);
 
-  &:hover {
-    .video__hover {
-      opacity: 1;
-      background-color: rgba(0, 0, 0, .5);
-    }
-  }
-
   @include bp(medium) {
     margin-bottom: space(4);
     padding: space(3);
     display: flex;
     height: 400px;
-    box-shadow: inset 0px -200px 100px rgba(0, 0, 0, 0.32);
+    box-shadow: inset 0 -200px 100px rgba(0, 0, 0, 0.32);
     position: relative;
   }
 
   @include bp(large) {
     height: 544px;
     padding: space(6);
+  }
+
+  &:hover .video__hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
   }
 }
 
@@ -58,8 +56,8 @@
 }
 
 .video__lead {
-  font-family: 'Zilla Slab Highlight', $sans-serif;
   @include typesize(1);
+  font-family: 'Zilla Slab Highlight', $sans-serif;
 
   @include bp(large) {
     @include rem(font-size, 1.7rem);
@@ -105,10 +103,14 @@
 
 .vidmodal {
   background-color: $white;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 8px;
+
+  @include bp(medium) {
+    width: 60%;
+  }
 }
 
 .vidmodal__close {
@@ -142,6 +144,7 @@
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
+  background-color: $black;
 
   iframe {
     position: absolute;

@@ -36,7 +36,7 @@ class VideoCard extends React.Component {
     return (
       <div className="video" style={cardStyle}>
         <div className="video__hover" onClick={this.openModal} >
-          <Img className="video__icon" src="/static/img/video/play-button.svg" alt="play" />
+          <Img className="video__icon" src="/static/img/video/play-button.svg" alt="play video" />
         </div>
         <div className="video__content">
           <p className="video__lead">{this.props.lead}</p>

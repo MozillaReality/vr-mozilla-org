@@ -31,9 +31,7 @@ DemoCard.propTypes = {
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   linkText: PropTypes.string.isRequired,
-  supports: PropTypes.oneOfType([
-    PropTypes.string,
-  ]).isRequired,
+  supports: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default DemoCard;

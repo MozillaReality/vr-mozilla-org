@@ -20,11 +20,11 @@ export default () => (
   <Layout title="Mozilla VR | Home" desc={desc}>
     <Hero />
     <VideoCard
-      bg={`${baseUrl}/static/img/video/bg.png`}
+      bg={`${baseUrl}/static/img/video/bg2.png`}
       lead="WebVR + A-Frame"
       title="Watch WebVR Showcase"
       linkText="Watch Now"
-      videoID="Le8pTXQqM3s"
+      videoID="yweLp54MTxQ"
     />
 
     {/* <div className="span span-1-3"> */}
