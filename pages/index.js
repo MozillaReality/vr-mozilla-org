@@ -22,7 +22,7 @@ export default () => (
     <VideoCard
       bg={`${baseUrl}/static/img/video/bg.png`}
       lead="WebVR + A-Frame"
-      title="View WebVR Showcase"
+      title="Watch WebVR Showcase"
       linkText="Watch Now"
       videoID="Le8pTXQqM3s"
     />
@@ -51,14 +51,14 @@ export default () => (
         linkText="View Gallery"
       />
     </div>
-    {/* <div className="span--last span-2-3"> */}
     <div className="col-md-7 col-lg-8 col-last">
       <DemoCard
         bg={`${baseUrl}/static/img/demo/apainter.png`}
         lead="Create with A-Frame"
         title="A-Painter"
-        linkText="Learn More"
-        link="https://blog.mozvr.com/a-painter/"
+        linkText="Start Painting"
+        link="https://aframe.io/a-painter/"
+        supports={['Oculus Rift', 'HTC Vive']}
       />
       <DemoCard
         bg={`${baseUrl}/static/img/demo/ablast.png`}
@@ -66,6 +66,7 @@ export default () => (
         title="A-Blast"
         linkText="Play Now"
         link="https://aframe.io/a-blast/"
+        supports={['Oculus Rift', 'HTC Vive']}
       />
     </div>
     <Experiment />

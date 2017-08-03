@@ -3,6 +3,7 @@
   padding: space(3);
   margin-bottom: space(2);
   box-shadow: inset 0 200px 200px rgba(0, 0, 0, 0.5);
+  position: relative;
 
   @include bp(medium) {
     margin-bottom: space(4);
@@ -56,5 +57,27 @@
 
   a:hover {
     color: lighten($purple-light, 10%);
+  }
+}
+
+.demo__support {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  ul {
+    @include clearfix;
+    margin: 0;
+    padding: space(1);
+  }
+
+  li {
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: $white;
+    margin-left: space(1);
+    padding: space(1);
+    float: left;
+    font-size: 12px;
   }
 }
