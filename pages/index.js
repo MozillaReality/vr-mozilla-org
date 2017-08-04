@@ -24,7 +24,7 @@ export default () => (
       lead="WebVR + A-Frame"
       title="Watch WebVR Showcase"
       linkText="Watch Now"
-      videoID="_fbFCr58WZ4"
+      videoID="1MskH9uqOyQ"
     />
 
     {/* <div className="span span-1-3"> */}
@@ -44,11 +44,11 @@ export default () => (
         linkText="Get Started"
       />
       <ResourceCard
-        lead="Explore VR"
-        title="VR List"
-        desc="Explore an independently curated list of VR experiences."
-        link="http://vrlist.io/"
-        linkText="View Gallery"
+        lead="News & Updates"
+        title="A-Frame Blog"
+        desc="Read about updates, community projects, and more."
+        link="https://aframe.io/blog/"
+        linkText="Read More"
       />
     </div>
     <div className="col-md-7 col-lg-8 col-last">
