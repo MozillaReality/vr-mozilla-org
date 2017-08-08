@@ -31,9 +31,9 @@ export default () => (
     <div className="col-md-5 col-lg-5">
       <ResourceCard
         lead="Experience VR"
-        title="Firefox Nightly"
+        title="Firefox"
         desc="Experience WebVR with Firefox; Mozilla's fast, private and ethical web browser."
-        link="https://www.mozilla.org/firefox/channel/desktop/#nightly"
+        link="https://www.mozilla.org/firefox/new/"
         linkText="Get it Now"
       />
       <ResourceCard
@@ -44,10 +44,10 @@ export default () => (
         linkText="Get Started"
       />
       <ResourceCard
-        lead="News & Updates"
-        title="A-Frame Blog"
-        desc="Read about updates, community projects, and more."
-        link="https://aframe.io/blog/"
+        lead="Explore VR"
+        title="WebVR Showcase"
+        desc="Explore a curated list of WebVR experiences."
+        link="https://airtable.com/embed/shr2Lc7pmlJis02R4/tblZbV2S0W0T5DDth?viewControls=on"
         linkText="Read More"
       />
     </div>
@@ -58,7 +58,7 @@ export default () => (
         title="A-Painter"
         linkText="Start Painting"
         link="https://aframe.io/a-painter/"
-        supports={['Oculus Rift', 'HTC Vive']}
+        supports={['Oculus Rift', 'HTC VIVE']}
       />
       <DemoCard
         bg={`${baseUrl}/static/img/demo/ablast.png`}
@@ -66,7 +66,7 @@ export default () => (
         title="A-Blast"
         linkText="Play Now"
         link="https://aframe.io/a-blast/"
-        supports={['Oculus Rift', 'HTC Vive']}
+        supports={['Oculus Rift', 'HTC VIVE']}
       />
     </div>
     <Experiment />
