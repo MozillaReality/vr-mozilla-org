@@ -18,4 +18,5 @@ test/**/out
 
 # other
 .env
+.vscode
 haters
