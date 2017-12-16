@@ -5,7 +5,7 @@ export default () => (
     <footer className="footer">
       <div className="col-md-4">
         <a href="http://mozilla.org">
-          <Img className="footer__logo" src="/static/img/moz-logo.svg" alt="Mozila" />
+          <Img className="footer__logo" src="static/img/moz-logo.svg" alt="Mozila" />
         </a>
       </div>
       <div className="col-md-4">

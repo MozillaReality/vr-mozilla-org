@@ -23,7 +23,7 @@ class Experience extends React.Component {
         <p className="experience__text">
           Experience WebVR on your phone, computer or headset.
         </p>
-        <Img className="hidden-desktop mb4" src="/static/img/experience/devices-with-bg.png" alt="supported devices" />
+        <Img className="hidden-desktop mb4" src="static/img/experience/devices-with-bg.png" alt="supported devices" />
         <div className="experience__devices">
           <NoSSR>
             <Parallax
@@ -34,7 +34,7 @@ class Experience extends React.Component {
               offsetXMax={2}
               slowerScrollRate={false}
             >
-              <Img src="/static/img/experience/devices-bg.png" alt="supported devices" />
+              <Img src="static/img/experience/devices-bg.png" alt="supported devices" />
             </Parallax>
           </NoSSR>
         </div>

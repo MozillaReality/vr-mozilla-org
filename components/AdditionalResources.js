@@ -2,7 +2,7 @@ import Img from './Img';
 
 const AdditionalResources = () => (
   <div className="additional" >
-    <Img className="mb4" src="/static/img/additional/link.svg" alt="additional link" />
+    <Img className="mb4" src="static/img/additional/link.svg" alt="additional link" />
     <h2 className="h1">Tutorials & Resources</h2>
 
     <div className="additional__resource">
