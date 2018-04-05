@@ -10,6 +10,10 @@
     "start": "next start",
     "deploy": "npm run build && touch dist/.nojekyll && gh-pages -d dist --dotfiles --repo git@github.com:mozillareality/mozillareality.github.io.git --branch master"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MozVR/vr-mozilla-org"
+  },
   "author": "Dan Brown",
   "license": "ISC",
   "dependencies": {
