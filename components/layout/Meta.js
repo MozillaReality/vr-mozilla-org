@@ -9,8 +9,7 @@ const Meta = ({ title, desc }) => (
   <div>
     <Head>
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-      <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js" />
-      <title>{ title }</title>
+      <title>{title}</title>
       <meta name="description" content={`${desc}`} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta charSet="utf-8" />
