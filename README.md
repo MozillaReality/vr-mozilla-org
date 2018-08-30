@@ -1,33 +1,25 @@
-# Mozilla VR site
+# Mozilla Mixed Reality Website
 
-Mozilla VR site, built using Next.js starter with scss, autoprefixer, SSR, and static generator
+Mozilla MR site, built using Gatsbyu scss, autoprefixer, SSR, and more
 
-## Installation
+## Install
 
-Requires [Node](https://nodejs.org/en/)
-```
-$ npm install
-```
-
-## Develop
-After running, you can access at localhost:3000
-```
-$ npm run dev
+```sh
+npm install
 ```
 
-## Build
-```
-$ npm run build
-```
+And run it locally:
 
-## Deploy to Github Pages (see issues!)
-```
-$ npm run deploy
+```sh
+npm run dev
 ```
 
-## Other
-if you are publishing to a static site, set your production URL in variables.js
+To build
 
+```sh
+npm run build
+```
 
-## Issues
-A current limitation of next.js static site exporting is that it needs to be in the root directory. This can present an issue when hosting on Github pages without a custom domain. Setting variables.js is a partial workaround, but it will still throw a console error. It also has no effect on assets linked to from CSS. You can use CSS-in-JS to get around this if needed. If you are using a custom domain or hosting at the root, then you won't have any issues.
+## Deploy
+
+TBD

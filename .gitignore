@@ -1,22 +1,12 @@
-# build output
-dist
-.next
-
-# dependencies
+# Project dependencies
+.cache
 node_modules
+yarn-error.log
 
-# logs
-*.log
-
-# coverage
-.nyc_output
-coverage
-
-# test output
-test/**/out
+# Build directory
+/public
 .DS_Store
 
-# other
-.env
-.vscode
-haters
+# Other
+haters/
+.vscode/

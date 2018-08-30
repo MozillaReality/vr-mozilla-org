@@ -1,0 +1,26 @@
+.experience {
+  // background-image: url('/static/img/experience/experience-bg.png');
+  padding: space(11) 0;
+  text-align: center;
+}
+
+.experience__text {
+  width: span(8);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: space(8);
+}
+
+.experience__devices {
+  // background-image: url('/static/img/experience/devices.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include bp(medium) {
+    height: auto;
+  }
+
+  @include bp(large) {
+    height: 360px;
+  }
+}
