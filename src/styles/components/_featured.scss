@@ -1,0 +1,51 @@
+.featured {
+  background-image: linear-gradient(to bottom, #381863 0%, #000000 80%);
+  box-shadow: inset 0 100px 200px rgba(0, 0, 0, 0.5);
+  margin-bottom: space(2);
+  padding: space(5);
+  color: $white;
+  text-align: center;
+  overflow: hidden;
+
+  @include bp(medium) {
+    margin-bottom: space(4);
+  }
+
+  @include bp(large) {
+  }
+}
+
+.featured__logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 250px;
+}
+
+.featured__link {
+  color: #b3b3ff;
+  border-bottom: 1px solid #b3b3ff;
+  padding-bottom: 2px;
+
+  &:hover,
+  &:focus {
+    color: lighten(#b3b3ff, 5%);
+  }
+}
+
+.featured__ribbon {
+  @include typesize(1);
+  font-weight: bold;
+  width: 320px;
+  font-family: 'Zilla Slab', $sans-serif;
+  background: #f7296d;
+  position: relative;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: $white;
+  box-shadow: 0px 1px 13px rgba(8, 8, 8, 0.97);
+  top: 10px;
+  left: -120px;
+  transform: rotate(-40deg);
+}

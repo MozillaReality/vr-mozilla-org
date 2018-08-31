@@ -45,7 +45,7 @@ const Experience = () => (
       </NoSSR>
     </div>
 
-    <div className="mt3">
+    {/* <div className="mt3">
       <a
         href="https://www.webvrexperiments.com/how"
         rel="noreferrer noopener"
@@ -54,7 +54,7 @@ const Experience = () => (
       >
         How to enjoy WebVR{' '}
       </a>
-    </div>
+    </div> */}
   </div>
 );
 

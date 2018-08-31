@@ -3,7 +3,7 @@ import Layout from '../layouts/layout';
 
 // components
 import Hero from '../components/Hero';
-import VideoCard from '../components/VideoCard';
+import FeaturedCard from '../components/FeaturedCard';
 import DemoCard from '../components/DemoCard';
 import ResourceCard from '../components/ResourceCard';
 import Experiment from '../components/Experiment';
@@ -12,9 +12,8 @@ import AdditionalResources from '../components/AdditionalResources';
 import About from '../components/About';
 
 // images
-import videoBackground from '../components/img/video/bg.png';
 import aPainter from '../components/img/demo/apainter.png';
-import aBlast from '../components/img/demo/ablast.png';
+import hubs from '../components/img/demo/hubs.png';
 
 const desc = `
   Virtual Reality for the free and open Web.
@@ -23,13 +22,7 @@ const desc = `
 const Home = () => (
   <Layout title="Mozilla Mixed Reality | Home" desc={desc}>
     <Hero />
-    <VideoCard
-      bg={videoBackground}
-      lead="WebVR + A-Frame"
-      title="Watch WebVR Showcase"
-      linkText="Watch Now"
-      videoID="1MskH9uqOyQ"
-    />
+    <FeaturedCard />
 
     {/* <div className="span span-1-3"> */}
     <div className="col-md-5 col-lg-5">
@@ -41,10 +34,10 @@ const Home = () => (
         linkText="Get it Now"
       />
       <ResourceCard
-        lead="Build VR"
-        title="A-Frame"
-        desc="A-Frame allows developers to easily create VR experiences for the browser."
-        link="https://aframe.io/docs/0.6.0/introduction/"
+        lead="Build with Unity"
+        title="Unity WebVR Assets"
+        desc="Publish and share VR experiences created in Unity on the open web."
+        link="https://hacks.mozilla.org/2018/02/create-vr-on-the-web-using-unity3d/"
         linkText="Get Started"
       />
       <ResourceCard
@@ -57,19 +50,19 @@ const Home = () => (
     </div>
     <div className="col-md-7 col-lg-8 col-last">
       <DemoCard
+        bg={hubs}
+        lead="Online Social VR"
+        title="Hubs by Mozilla"
+        linkText="Try Now"
+        link="https://hubs.mozilla.com"
+        supports={['Oculus', 'HTC', 'Daydream', 'Desktop', 'Mobile']}
+      />
+      <DemoCard
         bg={aPainter}
         lead="Create with A-Frame"
         title="A-Painter"
         linkText="Start Painting"
         link="https://aframe.io/a-painter/"
-        supports={['Oculus Rift', 'HTC VIVE']}
-      />
-      <DemoCard
-        bg={aBlast}
-        lead="Play with A-Frame"
-        title="A-Blast"
-        linkText="Play Now"
-        link="https://aframe.io/a-blast/"
         supports={['Oculus Rift', 'HTC VIVE']}
       />
     </div>

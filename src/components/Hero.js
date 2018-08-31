@@ -6,7 +6,7 @@ import vrIcon from './img/hero/vr-icon.svg';
 const Hero = () => (
   <div className="hero">
     <img className="hero__icon mb2" src={vrIcon} alt="Virtual Reality" />
-    <h1 className="hero__text">Virtual Reality for the Open Web</h1>
+    <h1 className="hero__text">Mixed Reality for the Open Web</h1>
   </div>
 );
 
