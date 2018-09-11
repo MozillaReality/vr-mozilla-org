@@ -1,7 +1,7 @@
 {
   "name": "mozilla-mixed-reality",
-  "description": "Gatsby default starter",
-  "version": "1.1.0",
+  "description": "Website for mixedreality.mozilla.org",
+  "version": "2.0.0",
   "author": "Dan Brown <dbrown@mozilla.com>",
   "dependencies": {
     "aframe": "^0.8.2",
@@ -12,6 +12,7 @@
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sass": "^2.0.0-beta.10",
+    "gh-pages": "^1.2.0",
     "mappy-breakpoints": "^0.2.3",
     "node-sass": "^4.9.3",
     "prop-types": "^15.6.2",
@@ -30,11 +31,12 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build && cp CNAME public",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build && touch public/.nojekyll && gh-pages -d public --dotfiles --repo git@github.com:mozillareality/mozillareality.github.io.git --branch master"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
