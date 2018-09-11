@@ -8,6 +8,11 @@
     @include typesize(2);
   }
 
+  h2 {
+    font-family: 'Open Sans', $sans-serif;
+    @include typesize(2);
+  }
+
   @include bp(medium) {
     h1 {
       @include typesize(3);
@@ -24,7 +29,7 @@
   overflow: hidden;
 
   h1 {
-    @include typesize(2);
+    @include typesize(3);
   }
 
   @include bp(medium) {

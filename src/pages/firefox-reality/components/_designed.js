@@ -5,10 +5,10 @@ import goggles from '../img/designed/goggles.png';
 
 const Designed = () => (
   <div className="fxr-designed">
-    <h1>Designed for Virtual Reality</h1>
+    <h2>Designed from the Virtual Ground Up</h2>
     <p>
-      Built from the ground up to handle all of the new opportunities (and
-      challenges) that come with browsing in VR.
+      Firefox Reality was specifically designed to tackle all of the new
+      opportunities (and challenges) that come with browsing in VR.
     </p>
     <img
       className="mt10"

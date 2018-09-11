@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 // images
 import oculus from '../img/download/oculus.svg';
 import daydream from '../img/download/daydream.svg';
-import htc from '../img/download/htc.svg';
 
 const style = {
   border: 'none',

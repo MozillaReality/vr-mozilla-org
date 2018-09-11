@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // images
-import exp1 from '../img/discover/exp1.png';
-import exp2 from '../img/discover/exp2.png';
-import exp3 from '../img/discover/exp3.png';
-import exp4 from '../img/discover/exp4.png';
-import exp5 from '../img/discover/exp5.png';
+import dance from '../img/discover/dance.jpg';
+import dessert from '../img/discover/dessert.jpg';
+import future from '../img/discover/future.jpg';
+import mrnomnom from '../img/discover/mrnomnom.jpg';
+import opera from '../img/discover/opera.png';
+import pirate from '../img/discover/pirate.jpeg';
+import thegirl from '../img/discover/thegirl.jpeg';
+import waikiki from '../img/discover/waikiki.jpg';
 
 const DiscoverItem = props => {
   const style = {
@@ -27,57 +30,31 @@ const DiscoverItem = props => {
 
 const Discover = () => (
   <div className="fxr-discover">
-    <h1>Discover the Immersive Web</h1>
+    <h2>Content Served Fresh</h2>
     <p>
-      Open Firefox Reality to be presented with the best immersive games,
-      videos, environments and experiences from around the web.
+      Firefox Reality serves you the very best immersive games, videos,
+      environments and experiences from around the web.
     </p>
     <div className="fxr-discover__grid first">
+      <DiscoverItem img={opera} tag="360° Panorama" desc="Opera House" />
       <DiscoverItem
-        img={exp1}
-        tag="360 Video"
-        desc="Virtual Reality for Everyone"
+        img={dessert}
+        tag="360° Video"
+        desc="Dessert Island: T. Thanks A Lot"
       />
-      <DiscoverItem
-        img={exp2}
-        tag="Interactive"
-        desc="Virtual Reality for Everyone"
-      />
-      <DiscoverItem
-        img={exp3}
-        tag="Interactive"
-        desc="Virtual Reality for Everyone"
-        new
-      />
-      <DiscoverItem
-        img={exp4}
-        tag="180 Video"
-        desc="Virtual Reality for Everyone"
-      />
+      <DiscoverItem img={pirate} tag="3D Model" desc="Pirate Tower" new />
+      <DiscoverItem img={mrnomnom} tag="VR Game" desc="Mr Nom Nom" />
     </div>
     <div className="fxr-discover__grid reverse">
+      <DiscoverItem img={future} tag="360° Video" desc="I Saw the Future" new />
+      <DiscoverItem img={dance} tag="360° Music Video" desc="Dance Tonight" />
       <DiscoverItem
-        img={exp5}
-        tag="180 Video"
-        desc="Virtual Reality for Everyone"
+        img={thegirl}
+        tag="3D Model"
+        desc="The Girl who found pearls..."
         new
       />
-      <DiscoverItem
-        img={exp3}
-        tag="Interactive"
-        desc="Virtual Reality for Everyone"
-        new
-      />
-      <DiscoverItem
-        img={exp2}
-        tag="360 Video"
-        desc="Virtual Reality for Everyone"
-      />
-      <DiscoverItem
-        img={exp1}
-        tag="Interactive"
-        desc="Virtual Reality for Everyone"
-      />
+      <DiscoverItem img={waikiki} tag="360° Panorama" desc="Waikiki Jetty" />
     </div>
   </div>
 );
