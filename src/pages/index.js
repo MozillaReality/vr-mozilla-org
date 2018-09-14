@@ -29,7 +29,7 @@ const Home = () => (
       <ResourceCard
         lead="Build with Unity"
         title="Unity WebVR Assets"
-        desc="Publish and share VR experiences created in Unity on the open web."
+        desc="Publish and share VR experiences created in Unity on the open Web."
         link="https://hacks.mozilla.org/2018/02/create-vr-on-the-web-using-unity3d/"
         linkText="Get Started"
       />
