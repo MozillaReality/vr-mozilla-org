@@ -21,11 +21,6 @@ const Header = () => (
               Firefox Reality
             </Link>
           </li>
-          <li className="nav__item">
-            <a href="https://aframe.io/" rel="noreferrer noopener">
-              Explore A-Frame
-            </a>
-          </li>
         </ul>
       </nav>
     </div>

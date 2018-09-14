@@ -27,13 +27,6 @@ const Home = () => (
     {/* <div className="span span-1-3"> */}
     <div className="col-md-5 col-lg-5">
       <ResourceCard
-        lead="Experience VR"
-        title="Firefox"
-        desc="Experience WebVR with Firefox; Mozilla's fast, private and ethical web browser."
-        link="https://www.mozilla.org/firefox/new/"
-        linkText="Get it Now"
-      />
-      <ResourceCard
         lead="Build with Unity"
         title="Unity WebVR Assets"
         desc="Publish and share VR experiences created in Unity on the open web."
@@ -42,10 +35,17 @@ const Home = () => (
       />
       <ResourceCard
         lead="Explore VR"
-        title="WebVR Showcase"
-        desc="Explore a curated list of WebVR experiences."
-        link="https://airtable.com/embed/shr2Lc7pmlJis02R4/tblZbV2S0W0T5DDth?viewControls=on"
+        title="WebVR Submissions"
+        desc="Submit your WebVR experiences to be featured in Firefox Reality."
+        link="https://airtable.com/shrHKZrLcGJhXNVuH"
         linkText="Read More"
+      />
+      <ResourceCard
+        lead="Experience VR"
+        title="Firefox Desktop"
+        desc="Experience WebVR with Firefox; Mozilla's fast, private and ethical web browser."
+        link="https://www.mozilla.org/firefox/new/"
+        linkText="Get it Now"
       />
     </div>
     <div className="col-md-7 col-lg-8 col-last">

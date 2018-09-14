@@ -6,11 +6,13 @@
   h1 {
     font-family: 'Open Sans', $sans-serif;
     @include typesize(2);
+    line-height: 3.5rem;
   }
 
   h2 {
     font-family: 'Open Sans', $sans-serif;
     @include typesize(2);
+    line-height: 3rem;
   }
 
   @include bp(medium) {
@@ -69,7 +71,11 @@
   display: flex;
   justify-content: center;
   color: $white;
-  height: 150px;
+  height: 100px;
+
+  @include bp(small) {
+    height: 150px;
+  }
 
   @include bp(medium) {
     height: 300px;
@@ -84,8 +90,13 @@
 .fxr-download__item-bg,
 .fxr-download__item-content {
   transition: all 0.3s ease-in;
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
+
+  @include bp(small) {
+    height: 150px;
+    width: 170px;
+  }
 
   @include bp(medium) {
     width: 300px;
@@ -152,12 +163,21 @@
   }
 
   img {
-    height: 50px;
+    height: 40px;
     margin-bottom: 30px;
+
+    @include bp(small) {
+      height: 50px;
+    }
   }
 
   span {
     font-size: 12px;
+    display: none;
+
+    @include bp(small) {
+      display: inline;
+    }
   }
 
   @include bp(medium) {
@@ -301,7 +321,7 @@
   font-family: 'Open Sans' $sans-serif;
   font-size: 12px;
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: 0.2px;
   overflow: hidden;
   white-space: nowrap;
 
@@ -352,11 +372,15 @@
 // Built
 
 .fxr-built {
-  @include bp(medium) {
+  @include bp(small) {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 280px 280px;
     grid-gap: 0;
+  }
+
+  @include bp(medium) {
+    grid-template-columns: 25% 25% 25% 25%;
   }
 
   @include bp(large) {
@@ -366,15 +390,18 @@
 
 .fxr-built__square {
   color: $white;
-  padding: 2rem;
   width: 50%;
   float: left;
   height: 300px;
+  padding: 1rem;
+  font-size: 14px;
 
-  @include bp(medium) {
+  @include bp(small) {
+    padding: 2rem;
     width: auto;
     float: none;
     height: auto;
+    @include typesize(0);
   }
 
   &.one {

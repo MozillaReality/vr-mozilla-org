@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 import logo from './img/moz-logo.svg';
 
@@ -14,12 +15,10 @@ const Footer = () => (
         <span className="footer__title">Additional Links</span>
         <ul className="footer__list">
           <li>
-            <a href="https://developer.mozilla.org/docs/Web/API/WebVR_API/Using_the_WebVR_API">
-              Using WebVR API (MDN)
-            </a>
+            <Link to="/firefox-reality">Firefox Reality</Link>
           </li>
           <li>
-            <a href="https://w3c.github.io/webvr/">WebVR Spec</a>
+            <a href="https://blog.mozvr.com">Mozilla Mixed Reality Blog</a>
           </li>
           <li>
             <a href="https://mail.mozilla.org/listinfo/web-vr-discuss">
@@ -30,7 +29,9 @@ const Footer = () => (
             <a href="https://webvr-slack.herokuapp.com/">WebVR Slack</a>
           </li>
           <li>
-            <a href="https://aframe.io/blog/">A-Frame Blog</a>
+            <a href="https://developer.mozilla.org/docs/Web/API/WebVR_API/Using_the_WebVR_API">
+              Using WebVR API (MDN)
+            </a>
           </li>
         </ul>
       </div>

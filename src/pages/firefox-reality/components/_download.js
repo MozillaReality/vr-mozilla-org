@@ -25,13 +25,19 @@ const Download = () => (
   <div className="fxr-download">
     <DownloadItem
       img={oculus}
-      text="Get it for Oculus"
+      text="Get it for HTC VIVEPORT"
+      alt="HTC VIVEPORT"
+      link="https://www.viveport.com/apps/05634fed-6dc5-4aa8-865d-af6027f4ec09"
+    />
+    <DownloadItem
+      img={oculus}
+      text="Get it for Oculus Go"
       alt="Oculus"
-      link="https://www.google.com"
+      link="https://www.oculus.com/experiences/go/2208418715853974/"
     />
     <DownloadItem
       img={daydream}
-      text="Get it for Daydream"
+      text="Get it for Google Daydream"
       alt="Oculus"
       link="https://www.google.com"
     />
