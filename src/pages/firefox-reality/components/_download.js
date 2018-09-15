@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 // images
 import oculus from '../img/download/oculus.svg';
 import daydream from '../img/download/daydream.svg';
+import htc from '../img/download/htc.svg';
 
 const style = {
   border: 'none',
@@ -24,7 +25,7 @@ const DownloadItem = props => (
 const Download = () => (
   <div className="fxr-download">
     <DownloadItem
-      img={oculus}
+      img={htc}
       text="Get it for HTC VIVEPORT"
       alt="HTC VIVEPORT"
       link="https://www.viveport.com/apps/05634fed-6dc5-4aa8-865d-af6027f4ec09"
