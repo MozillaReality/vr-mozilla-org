@@ -40,7 +40,7 @@ const Download = () => (
       img={daydream}
       text="Get it for Google Daydream"
       alt="Oculus"
-      link="https://www.google.com"
+      link="https://play.google.com/store/apps/details?id=org.mozilla.vrbrowser"
     />
   </div>
 );
