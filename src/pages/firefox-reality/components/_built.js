@@ -1,12 +1,12 @@
 import React from 'react';
 
 // images
-import ablast from '../img/built/ablast.png';
+import bg from '../img/built/bg.jpg';
 import apainter from '../img/built/apainter.png';
 import kid from '../img/built/kid.png';
 
 const blastStyle = {
-  backgroundImage: `url(${ablast})`,
+  backgroundImage: `url(${bg})`,
   backgroundSize: 'cover',
 };
 const paintStyle = {
@@ -31,7 +31,7 @@ const Built = () => (
           We have a bit of experience when it comes to making an awesome
           browser.
         </p>
-        <p>Mozilla has been fighting for a better internet since 1998.</p>
+        <p>Mozilla has been fighting for a better Internet since 1998.</p>
       </div>
     </div>
     <div style={kidStyle} className="fxr-built__square five" />

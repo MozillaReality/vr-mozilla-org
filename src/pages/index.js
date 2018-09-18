@@ -38,12 +38,12 @@ const Home = () => (
         title="WebVR Submissions"
         desc="Submit your WebVR experiences to be featured in Firefox Reality."
         link="https://airtable.com/shrHKZrLcGJhXNVuH"
-        linkText="Read More"
+        linkText="Submit Now"
       />
       <ResourceCard
         lead="Experience VR"
         title="Firefox Desktop"
-        desc="Experience WebVR with Firefox; Mozilla's fast, private and ethical web browser."
+        desc="Experience WebVR with Firefox; Mozilla's fast and private web browser."
         link="https://www.mozilla.org/firefox/new/"
         linkText="Get it Now"
       />

@@ -66,15 +66,74 @@
 }
 
 // DOWNLOAD SECTION
+
+.fxr-download__modal {
+  background-color: #2d2d2d;
+  color: $white;;
+  padding: 30px;
+  text-align: center;
+  border-radius: 4px;
+  max-width: 90%;
+
+  button {
+    background-color: white;
+    margin-top: 1em;
+    color: black;
+  }
+}
+
+.fxr-download__modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+  color: black;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+body.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+
 .fxr-download {
   background-color: #18181c;
   display: flex;
   justify-content: center;
   color: $white;
-  height: 100px;
+  flex-wrap: wrap;
+
+  p {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+  }
 
   @include bp(small) {
     height: 150px;
+
+    p {
+      display: none;
+    }
   }
 
   @include bp(medium) {
@@ -84,6 +143,10 @@
   @include bp(large) {
     height: 350px;
   }
+}
+
+.fxr-download__item-link {
+  border: none;
 }
 
 .fxr-download__item,
@@ -99,8 +162,8 @@
   }
 
   @include bp(medium) {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
 
   @include bp(large) {
@@ -165,23 +228,26 @@
   img {
     height: 40px;
     margin-bottom: 30px;
-
-    @include bp(small) {
-      height: 50px;
-    }
   }
 
   span {
     font-size: 12px;
     display: none;
+  }
 
-    @include bp(small) {
+  @include bp(small) {
+    img {
+      height: 50px;
+    }
+
+    span {
       display: inline;
     }
   }
 
   @include bp(medium) {
     img {
+      margin-bottom: 50px;
       height: auto;
     }
 
@@ -189,6 +255,16 @@
       display: block;
       bottom: 70px;
       font-size: 16px;
+    }
+  }
+
+  @include bp(large) {
+    img {
+      margin-bottom: 50px;
+    }
+
+    span {
+      bottom: 100px;
     }
   }
 }
