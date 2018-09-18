@@ -53,7 +53,9 @@ class DownloadItem extends React.Component {
             closeTimeoutMS={300}
           >
             <p>{this.props.modalText}</p>
-            <button onClick={this.closeModal}>Dismiss</button>
+            <button type="button" onClick={this.closeModal}>
+              Dismiss
+            </button>
           </Modal>
         )}
       </>
@@ -64,7 +66,13 @@ class DownloadItem extends React.Component {
 const Download = () => (
   <div className="fxr-download">
     <p>Download For: </p>
-    <DownloadItem isModal img={htc} text="Get it for Viveport" alt="Viveport" modalText="Please search for 'Firefox Reality' in the Viveport store" />
+    <DownloadItem
+      isModal
+      img={htc}
+      text="Get it for Viveport"
+      alt="Viveport"
+      modalText="Please search for 'Firefox Reality' in the Viveport store"
+    />
     <DownloadItem
       img={oculus}
       text="Get it for Oculus Go"
@@ -85,6 +93,14 @@ DownloadItem.propTypes = {
   text: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   link: PropTypes.string,
+  isModal: PropTypes.bool,
+  modalText: PropTypes.string,
+};
+
+DownloadItem.defaultProps = {
+  link: '',
+  modalText: '',
+  isModal: false,
 };
 
 export default Download;
