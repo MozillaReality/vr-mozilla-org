@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import logo from './img/logo.svg';
+import logo from './img/moz-logo.svg';
 
 const Header = () => (
   <header className="header">
     <div className="container">
       <Link to="/">
-        <img className="logo" src={logo} alt="Mozilla VR" />
+        <img className="logo" src={logo} alt="Mozilla Mixed Reality Logo" />
       </Link>
       <nav className="nav">
         <ul className="nav__list">
