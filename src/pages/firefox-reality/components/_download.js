@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
+import ReactGA from 'react-ga';
 
 // images
 import oculus from '../img/download/oculus.svg';
 import daydream from '../img/download/daydream.svg';
 import htc from '../img/download/htc.svg';
+
+// For GA Events
+ReactGA.initialize('UA-35433268-70');
 
 class DownloadItem extends React.Component {
   constructor() {
@@ -15,9 +19,26 @@ class DownloadItem extends React.Component {
     };
   }
 
+  componentWillMount() {
+    Modal.setAppElement('body');
+  }
+
+  captureEvent = () => {
+    ReactGA.event({
+      category: 'download',
+      action: 'click',
+      label: `download ${this.props.alt}`,
+    });
+  };
+
   openModal = e => {
     e.preventDefault();
     this.setState({ isOpen: true });
+    ReactGA.event({
+      category: 'download',
+      action: 'click',
+      label: `download ${this.props.alt}`,
+    });
   };
 
   closeModal = () => {
@@ -32,7 +53,9 @@ class DownloadItem extends React.Component {
           target="_blank"
           rel="noopener noreferrer"
           href={this.props.link}
-          onClick={this.props.isModal ? e => this.openModal(e) : null}
+          onClick={
+            this.props.isModal ? e => this.openModal(e) : this.captureEvent
+          }
           onKeyDown={this.openModal}
         >
           <div className="fxr-download__item">
@@ -83,7 +106,7 @@ const Download = () => (
     <DownloadItem
       img={daydream}
       text="Get it for Google Daydream"
-      alt="Oculus"
+      alt="Daydream"
       link="https://play.google.com/store/apps/details?id=org.mozilla.vrbrowser"
     />
   </div>
