@@ -1,6 +1,6 @@
 # Mozilla Mixed Reality Website
 
-Mozilla MR site, built using Gatsbyu scss, autoprefixer, SSR, and more
+Mozilla MR site, built using Gatsby/React, scss, autoprefixer, SSR, and more
 
 ## Install
 
@@ -22,4 +22,4 @@ npm run build
 
 ## Deploy
 
-TBD
+npm run deploy (requires proper permissions)
