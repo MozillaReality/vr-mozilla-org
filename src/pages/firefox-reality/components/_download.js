@@ -15,7 +15,8 @@ class DownloadItem extends React.Component {
     };
   }
 
-  openModal = () => {
+  openModal = e => {
+    e.preventDefault();
     this.setState({ isOpen: true });
   };
 
@@ -31,7 +32,7 @@ class DownloadItem extends React.Component {
           target="_blank"
           rel="noopener noreferrer"
           href={this.props.link}
-          onClick={this.props.isModal ? this.openModal : null}
+          onClick={this.props.isModal ? e => this.openModal(e) : null}
           onKeyDown={this.openModal}
         >
           <div className="fxr-download__item">
