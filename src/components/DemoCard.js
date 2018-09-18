@@ -11,20 +11,20 @@ const DemoCard = ({ bg, supports, lead, title, link, linkText }) => {
   ));
 
   return (
-    <div className="demo" style={cardStyle}>
-      <div className="demo__content">
-        <p className="demo__lead">{lead}</p>
-        <h2 className="demo__title">{title}</h2>
-        <p className="demo__link">
-          <a target="_blank" rel="noopener noreferrer" href={link}>
-            {linkText}
-          </a>
-        </p>
+    <a target="_blank" rel="noopener noreferrer" href={link}>
+      <div className="demo" style={cardStyle}>
+        <div className="demo__content">
+          <p className="demo__lead">{lead}</p>
+          <h2 className="demo__title">{title}</h2>
+          <p>
+            <span className="demo__link">{linkText}</span>
+          </p>
+        </div>
+        <div className="demo__support">
+          <ul>{listItems}</ul>
+        </div>
       </div>
-      <div className="demo__support">
-        <ul>{listItems}</ul>
-      </div>
-    </div>
+    </a>
   );
 };
 

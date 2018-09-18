@@ -45,11 +45,11 @@ class Experiment extends React.Component {
 
         <div className="experiment__link">
           <a
-            href="https://codepen.io/mozvr/pen/BjygdO"
+            href="https://glitch.com/~aframe"
             rel="noreferrer noopener"
             target="_blank"
           >
-            View and edit an example on Codepen
+            View and edit an example on Glitch
           </a>
         </div>
 

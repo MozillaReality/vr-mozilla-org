@@ -17,31 +17,42 @@
 }
 
 .nav {
-  float: right;
-  display: none;
-
   @include bp(medium) {
+    float: right;
     display: block;
   }
 }
 
 .nav__list {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 0 0;
+
+  @include bp(medium) {
+    display: block;
+    margin-top: 0;
+  }
 }
 
 .nav__item {
   float: left;
-  margin-left: space(5);
-  line-height: space(5);
+  line-height: space(3);
+  margin: 0;
+  padding: 0 16px;
+
+  @include bp(medium) {
+    margin-left: space(5);
+    padding: 0;
+  }
 
   a {
     color: $black;
     font-weight: 600;
     border-bottom: 0 solid rgba(0, 0, 0, 0);
-    transition: border-bottom 200ms $base-ease,
-                opacity 200ms $base-ease;
+    transition: border-bottom 200ms $base-ease, opacity 200ms $base-ease;
   }
 
   a:hover {
-    border-bottom: 2px solid rgba(0, 0, 0, 1);;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
   }
 }

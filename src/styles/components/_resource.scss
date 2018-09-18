@@ -4,6 +4,11 @@
   padding: space(3);
   margin-bottom: space(2);
   flex-direction: column;
+  transition: background-color $base-time $base-ease;
+
+  &:hover {
+    background-color: lighten($black, 10%);
+  }
 
   @include bp(medium) {
     margin-bottom: space(4);
