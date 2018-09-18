@@ -1,7 +1,7 @@
 import React from 'react';
 
 // images
-import logo from '../layouts/img/logo.svg';
+import logo from '../layouts/img/moz-logo.svg';
 import bg from './img/about/bg.png';
 
 // styles
@@ -13,7 +13,7 @@ const About = () => (
   <div className="about" id="mission">
     <div className="about__content">
       <div>
-        <img className="about__logo mb6" src={logo} alt="Mozilla Logo" />
+        <img className="about__logo mb6" src={logo} alt="Mozilla Mixed Reality Logo" />
         <p className="mb6">
           Our mission is to keep the Internet open to innovators, creators, and
           builders on the web. Virtual Reality is set to change the future of
