@@ -16,10 +16,10 @@ const About = () => (
         <img className="about__logo mb6" src={logo} alt="Mozilla Mixed Reality Logo" />
         <p className="mb6">
           Our mission is to keep the Internet open to innovators, creators, and
-          builders on the web. Virtual Reality is set to change the future of
-          web interaction. The ability for anyone to access and enjoy VR
+          builders on the Web. Virtual Reality is set to change the future of
+          Web interaction. The ability for anyone to access and enjoy VR
           experiences is critical. This is why Mozilla set out to bring virtual
-          reality to web browsers, and why we are enabling WebVR in Firefox.
+          reality to Web browsers, and why we are enabling WebVR in Firefox.
         </p>
         {/* <a href="https://www.mozilla.org" rel="noreferrer noopener" target="_blank">Read More</a> */}
       </div>

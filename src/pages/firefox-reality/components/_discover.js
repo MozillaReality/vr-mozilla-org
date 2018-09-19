@@ -33,7 +33,7 @@ const Discover = () => (
     <h2>Content Served Fresh</h2>
     <p>
       Firefox Reality serves you the very best immersive games, videos,
-      environments and experiences from around the web.
+      environments, and experiences from around the Web.
     </p>
     <div className="fxr-discover__grid first">
       <DiscoverItem img={opera} tag="360° Panorama" desc="Opera House" />
