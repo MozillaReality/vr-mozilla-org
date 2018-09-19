@@ -6,16 +6,13 @@ import apainter from '../img/built/apainter.png';
 import kid from '../img/built/kid.png';
 
 const blastStyle = {
-  backgroundImage: `url(${bg})`,
-  backgroundSize: 'cover',
+  backgroundImage: `url(${bg})`
 };
 const paintStyle = {
-  backgroundImage: `url(${apainter})`,
-  backgroundSize: 'cover',
+  backgroundImage: `url(${apainter})`
 };
 const kidStyle = {
-  backgroundImage: `url(${kid})`,
-  backgroundSize: 'cover',
+  backgroundImage: `url(${kid})`
 };
 
 const Built = () => (
