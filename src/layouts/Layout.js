@@ -32,6 +32,8 @@ const Layout = ({
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
+      <script src="email.js" />
+
       {/* Favicons */}
       <link rel="icon" type="image/png" href={favicon16} sizes="16x16" />
       <link rel="icon" type="image/png" href={favicon32} sizes="32x32" />
