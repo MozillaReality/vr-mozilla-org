@@ -72,7 +72,7 @@ class Signup extends Component {
                   type="hidden"
                   id="newsletters"
                   name="newsletters"
-                  value="mozilla-and-you"
+                  value="mozilla-technology"
                 />
                 <div id="newsletter_errors" className="newsletter_errors" />
                 <div id="newsletter_email" className="form_group">
