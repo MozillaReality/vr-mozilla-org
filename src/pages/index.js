@@ -10,6 +10,7 @@ import Experiment from '../components/Experiment';
 import Experience from '../components/Experience';
 import AdditionalResources from '../components/AdditionalResources';
 import About from '../components/About';
+import Signup from '../components/Signup';
 
 // images
 import aPainter from '../components/img/demo/apainter.png';
@@ -68,6 +69,7 @@ const Home = () => (
     </div>
     <Experiment />
     <Experience />
+    <Signup />
     <AdditionalResources />
     <About />
   </Layout>

@@ -1,18 +1,20 @@
 import React from 'react';
 
 // images
-import bg from '../img/built/bg.jpg';
 import apainter from '../img/built/apainter.png';
-import kid from '../img/built/kid.png';
+import kid from '../img/built/kid.jpg';
+import puzzlerain from '../img/built/puzzlerain.jpg';
 
-const blastStyle = {
-  backgroundImage: `url(${bg})`
-};
-const paintStyle = {
-  backgroundImage: `url(${apainter})`
+const apainterStyle = {
+  backgroundImage: `url(${apainter})`,
+  backgroundSize: 'cover',
 };
 const kidStyle = {
-  backgroundImage: `url(${kid})`
+  backgroundImage: `url(${kid})`,
+};
+const puzzlerainStyle = {
+  backgroundImage: `url(${puzzlerain})`,
+  backgroundSize: 'cover',
 };
 
 const Built = () => (
@@ -20,8 +22,8 @@ const Built = () => (
     <div className="fxr-built__square one">
       <p>Built by Mozilla</p>
     </div>
-    <div style={paintStyle} className="fxr-built__square two" />
-    <div style={blastStyle} className="fxr-built__square three" />
+    <div style={apainterStyle} className="fxr-built__square two" />
+    <div style={puzzlerainStyle} className="fxr-built__square three" />
     <div className="fxr-built__square four">
       <div>
         <p>
