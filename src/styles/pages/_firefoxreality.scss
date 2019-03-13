@@ -465,12 +465,14 @@ body.ReactModal__Body--open {
 }
 
 .fxr-built__square {
+  background-position: 50%;
+  background-size: cover;
   color: $white;
-  width: 50%;
   float: left;
+  font-size: 14px;
   height: 300px;
   padding: 1rem;
-  font-size: 14px;
+  width: 50%;
 
   @include bp(small) {
     padding: 2rem;

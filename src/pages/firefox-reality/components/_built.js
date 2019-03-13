@@ -1,20 +1,19 @@
 import React from 'react';
 
 // images
-import puzzlerain from '../img/built/puzzlerain.jpg';
 import apainter from '../img/built/apainter.png';
 import kid from '../img/built/kid.jpg';
+import puzzlerain from '../img/built/puzzlerain.jpg';
 
-const puzzlerainStyle = {
-  backgroundImage: `url(${puzzlerain})`,
-  backgroundSize: 'cover',
-};
 const apainterStyle = {
   backgroundImage: `url(${apainter})`,
   backgroundSize: 'cover',
 };
 const kidStyle = {
   backgroundImage: `url(${kid})`,
+};
+const puzzlerainStyle = {
+  backgroundImage: `url(${puzzlerain})`,
   backgroundSize: 'cover',
 };
 
