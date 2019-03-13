@@ -16,7 +16,7 @@ import socialImg from '../components/img/about/bg.png';
 
 const Layout = ({
   children,
-  desc = 'Mixed Reality for a free and open web',
+  desc = 'Mixed Reality for a free and open Web',
   title = 'Mozilla Mixed Reality',
 }) => (
   <>
@@ -43,7 +43,7 @@ const Layout = ({
       <meta property="og:title" content="Mozilla Mixed Reality" />
       <meta
         property="og:description"
-        content="Mixed Reality for a free and open web"
+        content="Mixed Reality for a free and open Web"
       />
       <meta property="og:image" content={socialImg} />
 
@@ -54,7 +54,7 @@ const Layout = ({
       <meta name="twitter:title" content="Mozilla Mixed Reality" />
       <meta
         name="twitter:description"
-        content="Mixed Reality for a free and open web"
+        content="Mixed Reality for a free and open Web"
       />
       <meta name="twitter:image" content={socialImg} />
 
@@ -79,7 +79,7 @@ Layout.propTypes = {
 
 Layout.defaultProps = {
   title: 'Mozilla Mixed Reality',
-  desc: 'Mixed Reality for a free and open web',
+  desc: 'Mixed Reality for a free and open Web',
 };
 
 export default Layout;
