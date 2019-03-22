@@ -28,11 +28,11 @@ const Home = () => (
     {/* <div className="span span-1-3"> */}
     <div className="col-md-5 col-lg-5">
       <ResourceCard
-        lead="Build with Unity"
-        title="Unity WebVR Assets"
-        desc="Publish and share VR experiences created in Unity on the open Web."
-        link="https://hacks.mozilla.org/2018/02/create-vr-on-the-web-using-unity3d/"
-        linkText="Get Started"
+        lead="Create with WebVR"
+        title="WebVR Starter Kit"
+        desc="Build VR experiences with this kit we worked on with our friends at Glitch."
+        link="https://hacks.mozilla.org/2019/02/webvr-starter-kit-mozilla-glitch/"
+        linkText="Learn More"
       />
       <ResourceCard
         lead="Explore VR"
