@@ -35,10 +35,10 @@ const Home = () => (
         linkText="Learn More"
       />
       <ResourceCard
-        lead="Explore VR"
-        title="WebVR Submissions"
-        desc="Submit your WebVR experiences to be featured in Firefox Reality."
-        link="https://airtable.com/shrHKZrLcGJhXNVuH"
+        lead="Experience VR"
+        title="Submit content"
+        desc="Submit your web and video experiences to be featured in Firefox Reality."
+        link="https://docs.google.com/forms/d/12Tc_7lvs8aBRqMY18DnYF4WXNqgoiLoZ9yq18VecDZY/viewform?edit_requested=true"
         linkText="Submit Now"
       />
       <ResourceCard
