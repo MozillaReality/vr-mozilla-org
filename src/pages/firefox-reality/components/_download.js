@@ -5,7 +5,7 @@ import ReactGA from 'react-ga';
 
 // images
 import oculus from '../img/download/oculus.svg';
-import daydream from '../img/download/daydream.svg';
+import pico from '../img/download/pico.png';
 import htc from '../img/download/htc.svg';
 
 // For GA Events
@@ -104,10 +104,10 @@ const Download = () => (
       link="https://www.oculus.com/experiences/go/2208418715853974/"
     />
     <DownloadItem
-      img={daydream}
-      text="Get it for Google Daydream"
-      alt="Daydream"
-      link="https://play.google.com/store/apps/details?id=org.mozilla.vrbrowser"
+      img={pico}
+      text="Get it for Pico"
+      alt="Pico"
+      link="Please search for 'Firefox Reality' in the Pico store"
     />
   </div>
 );
