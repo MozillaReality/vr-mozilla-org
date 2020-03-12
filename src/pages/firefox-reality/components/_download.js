@@ -104,10 +104,11 @@ const Download = () => (
       link="https://www.oculus.com/experiences/go/2208418715853974/"
     />
     <DownloadItem
+      isModal
       img={pico}
       text="Get it for Pico"
       alt="Pico"
-      link="Please search for 'Firefox Reality' in the Pico store"
+      modalText="Please search for 'Firefox Reality' in the Pico store"
     />
   </div>
 );
