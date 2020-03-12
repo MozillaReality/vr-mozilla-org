@@ -108,7 +108,7 @@ const Download = () => (
       img={pico}
       text="Get it for Pico"
       alt="Pico"
-      modalText="Please search for 'Firefox Reality' in the Pico store"
+      modalText="Firefox Reality is coming soon to the Pico store"
     />
   </div>
 );
