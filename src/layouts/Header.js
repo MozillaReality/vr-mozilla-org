@@ -21,6 +21,11 @@ const Header = () => (
               Firefox Reality
             </Link>
           </li>
+          <li className="nav__item">
+            <a href="https://shop.spreadshirt.com/mozillaMR/" rel="noreferrer noopener">
+              Merchandise
+            </a>
+          </li>
         </ul>
       </nav>
     </div>

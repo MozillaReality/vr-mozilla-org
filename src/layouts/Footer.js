@@ -21,8 +21,8 @@ const Footer = () => (
             <a href="https://blog.mozvr.com">Mozilla Mixed Reality Blog</a>
           </li>
           <li>
-            <a href="https://mail.mozilla.org/listinfo/web-vr-discuss">
-              WebVR Newsletter
+            <a href="https://shop.spreadshirt.com/mozillaMR/">
+              Mozilla Reality Merchandise
             </a>
           </li>
           <li>
