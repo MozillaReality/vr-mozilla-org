@@ -9,7 +9,7 @@ import Designed from './components/_designed';
 import Built from './components/_built';
 
 const desc = `
-  A new web browser buyilt for Mixed Reality.
+  A new web browser built for Mixed Reality.
 `;
 
 const Firefox = () => (

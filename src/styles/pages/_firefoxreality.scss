@@ -128,8 +128,11 @@ body.ReactModal__Body--open {
     font-weight: bold;
   }
 
+  /* these are double the fxr-download__item height since
+     there are 2 rows of download items */
+
   @include bp(small) {
-    height: 150px;
+    height: 300px;
 
     p {
       display: none;
@@ -137,11 +140,11 @@ body.ReactModal__Body--open {
   }
 
   @include bp(medium) {
-    height: 300px;
+    height: 560px;
   }
 
   @include bp(large) {
-    height: 350px;
+    height: 700px;
   }
 }
 
@@ -175,6 +178,21 @@ body.ReactModal__Body--open {
 .fxr-download__item {
   cursor: pointer;
   position: relative;
+
+  /* "debug" background colors to identify transition between sizes
+  background-color: orange;
+  @include bp(small) {
+    background-color: green;
+  }
+
+  @include bp(medium) {
+    background-color: red;
+  }
+
+  @include bp(large) {
+    background-color: blue;
+  }
+  */
 
   @include bp(medium) {
     &:hover {
@@ -216,12 +234,13 @@ body.ReactModal__Body--open {
     opacity: 0.7;
   }
 
-  span {
+  .fxr-download__item-content-type {
+    color: white;
+  }
+
+  .fxr-download__item-content-text {
     color: #eb1b44;
     border-bottom: 2px solid #eb1b44;
-    display: block;
-    position: absolute;
-    bottom: 30px;
     font-weight: bold;
   }
 
@@ -248,7 +267,7 @@ body.ReactModal__Body--open {
   @include bp(medium) {
     img {
       margin-bottom: 50px;
-      height: auto;
+      height: 75px;
     }
 
     span {
@@ -261,10 +280,11 @@ body.ReactModal__Body--open {
   @include bp(large) {
     img {
       margin-bottom: 50px;
+      height: 100px;
     }
 
     span {
-      bottom: 100px;
+      display:block;
     }
   }
 }
