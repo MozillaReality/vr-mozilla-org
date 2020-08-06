@@ -120,7 +120,7 @@ const Download = () => (
       text="Get it for Viveport"
       alt="Viveport PC"
       deviceType="Tethered VR"
-      link="about:blank"
+      link="https://www.viveport.com/22a9b15a-a651-4068-945d-aebdda159261"
     />
     <DownloadItem
       img={msft}
