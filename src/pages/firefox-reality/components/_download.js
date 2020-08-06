@@ -7,6 +7,7 @@ import ReactGA from 'react-ga';
 import oculus from '../img/download/oculus.svg';
 import pico from '../img/download/pico.png';
 import htc from '../img/download/htc.svg';
+import msft from '../img/download/msft.svg';
 
 // For GA Events
 ReactGA.initialize('UA-35433268-70');
@@ -62,7 +63,8 @@ class DownloadItem extends React.Component {
             <div className="fxr-download__item-bg" />
             <div className="fxr-download__item-content">
               <img src={this.props.img} alt={this.props.alt} />
-              <span>{this.props.text}</span>
+              <span className="fxr-download__item-content-type">{this.props.deviceType}</span>
+              <span className="fxr-download__item-content-text">{this.props.text}</span>
             </div>
           </div>
         </a>
@@ -95,12 +97,14 @@ const Download = () => (
       img={htc}
       text="Get it for Viveport"
       alt="Viveport"
+      deviceType="Standalone VR"
       modalText="Please search for 'Firefox Reality' in the Viveport store"
     />
     <DownloadItem
       img={oculus}
       text="Get it for Oculus Go"
       alt="Oculus"
+      deviceType="Standalone VR"
       link="https://www.oculus.com/experiences/go/2208418715853974/"
     />
     <DownloadItem
@@ -108,7 +112,22 @@ const Download = () => (
       img={pico}
       text="Get it for Pico"
       alt="Pico"
+      deviceType="Standalone VR"
       modalText="Firefox Reality is coming soon to the Pico store"
+    />
+    <DownloadItem
+      img={htc}
+      text="Get it for Viveport"
+      alt="Viveport PC"
+      deviceType="Tethered VR"
+      link="about:blank"
+    />
+    <DownloadItem
+      img={msft}
+      text="Get it for Hololens"
+      alt="Hololens"
+      deviceType="Standalone AR"
+      link="https://www.microsoft.com/en-us/p/firefox-reality/9npq78m7nb0r"
     />
   </div>
 );
@@ -120,6 +139,7 @@ DownloadItem.propTypes = {
   link: PropTypes.string,
   isModal: PropTypes.bool,
   modalText: PropTypes.string,
+  deviceType : PropTypes.string,
 };
 
 DownloadItem.defaultProps = {
