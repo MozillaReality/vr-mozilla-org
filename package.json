@@ -6,7 +6,7 @@
   "dependencies": {
     "aframe": "^0.8.2",
     "aframe-react": "^4.4.0",
-    "gatsby": "^2.22.3",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-google-analytics": "^2.3.2",
     "gatsby-plugin-manifest": "^2.4.8",
     "gatsby-plugin-offline": "^2.2.10",
